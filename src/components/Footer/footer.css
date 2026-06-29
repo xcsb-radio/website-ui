@@ -1,0 +1,8 @@
+.footer-container {
+    color: white;
+    background-color: #666666;
+    bottom: 1px;
+    position: fixed;
+    width: 100%;
+    font-size: 11px;
+}
