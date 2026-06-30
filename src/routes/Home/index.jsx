@@ -93,15 +93,15 @@ function Home(props) {
                             <h3>&#9654; Financial donations</h3>
                             <p>We are currently seeking financial donations to help us reestablish ourselves. Studio space, production and streaming equipment, startup costs - it’a big initial hill to climb, but with your help we can do it! Please consider making a <a href="xcsb-donate.html">tax-deductible donation to XCSB</a>, via our fiscal partner The Reading Room. Online, Venmo, personal checks options available. THANK YOU THANK YOU for your support!!</p>
                             <p>
-                                <a href="xcsb-donate.html" className="buttonlinkwide"> &#9654; &nbsp;DONATE to XCSB&nbsp; &#9664;</a>
+                                <Link to="/xcsb-donate" className="buttonlinkwide"> &#9654; &nbsp;DONATE to XCSB&nbsp; &#9664;</Link>
                             </p>
 
                             <h3>&#9654; In-kind donations </h3>
                             <p>There are other ways to contribute, besides just financially. Our focus for the next few months is to get a studio set up and equipped, so we’ll need furniture, carpet, audio and computer equipment, office equipment &amp; supplies, cleaning supplies, coffee... <br />We will also need help with various professional services <strong>
                                 <emphasis>&ndash; we have an immediate need for a certified electrician, and a contractor with experience in structural glass</emphasis>
-                            </strong>. Here’s a <a href="files/XCSB_DonationsWishlist.pdf" target="_blank">list of things we’re specifically looking for</a>, and how you can coordinate your in-kind donations.</p>
+                            </strong>. Here’s a <a href="../../assets/files/XCSB_DonationsWishlist.pdf" target="_blank">list of things we’re specifically looking for</a>, and how you can coordinate your in-kind donations.</p>
 
-                            <img src="images/XCSB_buskersHat.png" />
+                            <img src="../../assets/XCSB_buskersHat.png" />
 
                             <h3>&#9654; Volunteering</h3>
                             <p>Interesting in joining our volunteer staff? We’re looking for talented passionate enthusiastic diverse folks to join the team, both on-air DJs and support staff. Membership is open to <em>all</em> members of our community, and we are embracing the chance to expand the diversity of both our staff and programming. We need your <em>ENERGY!</em></p>

@@ -1,0 +1,86 @@
+#app-container {
+    background-color: white;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    /* Use this max width or adjust to your content column */
+    width: 100%;
+    text-align: center;
+    /* Margin added for separation if placed inside a container */
+    margin: 20px auto;
+}
+
+.text-description {
+    color: #4b5563;
+    /* Gray */
+    margin-bottom: 1.5rem;
+}
+
+.text-status {
+    margin-top: 1rem;
+    font-size: 1rem;
+    color: #4b5563;
+    margin-bottom: 1.5rem;
+}
+
+#audioPlayerContainer {
+    min-height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    border: 1px solid #d1d5db;
+    border-radius: 0.5rem;
+    background-color: white;
+    box-shadow: inset 0 2px 4px 0 rgba(0, 0, 0, 0.05);
+    margin-bottom: 1.5rem;
+}
+
+.audio-element {
+    width: 100%;
+    max-width: 320px;
+}
+
+#randomButton {
+    width: 100%;
+    padding: 0.75rem 1.5rem;
+    background-color: #0099ff;
+    /* Green */
+    color: white;
+    font-weight: 600;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s;
+    cursor: pointer;
+}
+
+#randomButton:hover:not(:disabled) {
+    background-color: #0066ff;
+    /* Darker Green */
+}
+
+#randomButton:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.caption {
+    font-style: italic;
+    font-size: 0.9rem;
+    color: #4b5563;
+    margin-top: 0.5rem;
+}
+
+.caption-file-name {
+    font-weight: 700;
+    color: #4f46e5;
+    /* Indigo */
+}
+
+.text-note {
+    font-size: 0.75rem;
+    color: #9ca3af;
+    margin-top: 1rem;
+}

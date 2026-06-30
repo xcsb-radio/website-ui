@@ -2,38 +2,61 @@ import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from './assets/vite.svg'
 import heroImg from './assets/hero.png'
+
 import './App.css'
+import './assets/shared-css/basic-style.css'
+import './assets/shared-css/colorblocks-style.css'
+import './assets/shared-css/normalize.css'
+
 import NavBar from './components/NavBar'
 import FlyingV from './assets/IAmXCSB_flyingV.png'
-import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import { BrowserRouter, Routes, Route, useNavigate } from 'react-router-dom'
 import Events from './routes/Events'
 import Donate from './routes/Donate'
 import Home from './routes/Home'
+import MediaCoverage from './routes/MediaCoverage'
+import WCSB50Years from './routes/WCSB50Years'
 import Footer from './components/Footer'
 
 function App() {
-  const [count, setCount] = useState(0)
+  // const navigate = useNavigate();
+  // const handleScrollToPlace = (element, pathname) => {
+  //   console.log(element, pathname)
+  //   navigate(pathname)
+  //   const el = document.getElementById(element)
+  //   el.scrollIntoView({ behavior: 'smooth', block: 'start' })
+  // }
   console.log(import.meta.env.BASE_URL, window.location.pathname, `${import.meta.env.BASE_URL}xscb-donate`)
   return (
     <>
       <img src={FlyingV} alt="banner image XCSB" />
-      <BrowserRouter>
-        <NavBar />
-        <Routes>
-          <Route
-            path={`${import.meta.env.BASE_URL}`}
-            element={<Home />}
-          />
-          <Route
-            path={`${import.meta.env.BASE_URL}xcsb-donate`}
-            element={<Donate />}
-          />
-          <Route
-            path={`${import.meta.env.BASE_URL}xcsb-events`}
-            element={<Events />}
-          />
-        </Routes>
-      </BrowserRouter>
+      <div className="app-container">
+        <BrowserRouter>
+          <NavBar />
+          <Routes>
+            <Route
+              path={`${import.meta.env.BASE_URL}`}
+              element={<Home />}
+            />
+            <Route
+              path={`${import.meta.env.BASE_URL}xcsb-donate`}
+              element={<Donate />}
+            />
+            <Route
+              path={`${import.meta.env.BASE_URL}xcsb-mediaCoverage`}
+              element={<MediaCoverage />}
+            />
+            <Route
+              path={`${import.meta.env.BASE_URL}xcsb-events`}
+              element={<Events />}
+            />
+            <Route
+              path={`${import.meta.env.BASE_URL}xcsb-WCSB50Years`}
+              element={<WCSB50Years />}
+            />
+          </Routes>
+        </BrowserRouter>
+      </div>
       <Footer />
     </>
   )
