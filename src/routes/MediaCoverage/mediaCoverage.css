@@ -1,0 +1,9 @@
+.media-unfolding {
+    padding: 4em;
+    margin: auto;
+}
+.media-unfolding-li {
+    list-style-type: disc;
+    color: black;
+    text-align: left;
+}

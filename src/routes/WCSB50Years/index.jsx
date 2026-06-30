@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import './wcsb-50-years.css'
+import Cauldron from '../../assets/WCSBGoesLive_cauldron_04191976.jpg'
 
 function WCSB50Years(props) {
     return (
@@ -17,7 +18,7 @@ function WCSB50Years(props) {
                             {/* <!-- <p><a href="#" className="buttonlink">CALL TO ACTION</a> <a href="#" className="buttonlink">ONE MORE</a></p> --> */}
                         </div>
                         <div className="grid_6 rightfloat">
-                            <img src="images/WCSBGoesLive_cauldron_04191976.jpg" />
+                            <img src={Cauldron} />
                         </div>
                     </div>
                 </div>

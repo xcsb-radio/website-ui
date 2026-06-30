@@ -17,6 +17,7 @@ import Home from './routes/Home'
 import MediaCoverage from './routes/MediaCoverage'
 import WCSB50Years from './routes/WCSB50Years'
 import Footer from './components/Footer'
+// import Banner from './components/NavBar/Banner'
 
 function App() {
   // const navigate = useNavigate();
@@ -29,10 +30,12 @@ function App() {
   console.log(import.meta.env.BASE_URL, window.location.pathname, `${import.meta.env.BASE_URL}xscb-donate`)
   return (
     <>
-      <img src={FlyingV} alt="banner image XCSB" />
+    {/* <Banner /> */}
+      <img className="header-banner" src={FlyingV} alt="banner image XCSB" />
       <div className="app-container">
         <BrowserRouter>
           <NavBar />
+          <div className="routes-container">
           <Routes>
             <Route
               path={`${import.meta.env.BASE_URL}`}
@@ -55,6 +58,7 @@ function App() {
               element={<WCSB50Years />}
             />
           </Routes>
+          </div>
         </BrowserRouter>
       </div>
       <Footer />

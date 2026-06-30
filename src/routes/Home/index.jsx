@@ -1,6 +1,12 @@
 import { useState } from 'react'
 import './home.css'
 import { Link } from 'react-router-dom'
+import FundraisingBanner from '../../assets/xcsbFundraisingBanner-01242026_1200.png'
+import XcsbSchedule from '../../assets/XCSBSched_20260301_thumb.png'
+import XcsbPamphlet from '../../assets/fliers/XCSB-Pamphlet_pg1Thumbnail.png'
+import SaveWCSB from '../../assets/fliers/saveWCSB_thumbnail.png'
+import TheyStoleIt from '../../assets/fliers/theyStoleIt_thumbnail.png'
+import IdeaScam from '../../assets/fliers/ideaScam_thumbnail.png'
 
 function Home(props) {
     return (
@@ -27,7 +33,7 @@ function Home(props) {
                             <p>Here's our initial program schedule (click the thumbnail for full PDF - updated 3/15/26).</p>
 
                             <p style={{ textAlign: 'center' }}>
-                                <a href="files/XCSB_schedule.pdf" target="_blank"><img src="images/XCSBSched_20260301_thumb.png" /></a>
+                                <a href="files/XCSB_schedule.pdf" target="_blank"><img src={XcsbSchedule} /></a>
                             </p>
 
                             <p> THIS IS ONLY THE BEGINNING! We are still making adjustments,
@@ -37,7 +43,7 @@ function Home(props) {
                         </div>
 
                         <div className="grid_6">
-                            <a href="xcsb-donate.html"><img src="images/xcsbFundraisingBanner-01242026_1200.png" /></a>
+                            <a href="xcsb-donate.html"><img src={FundraisingBanner} /></a>
 
                             <p>Of course this new effort is going require raising funds &ndash; for equipment, studio rental, broadcast rights licensing,
                                 coffee... And we missed our annual Radiothon, so we have some catching up to do, financially.
@@ -192,10 +198,10 @@ function Home(props) {
                     <div className="grid_4">
                         <p>Here's a few downloadable PDF files you can print out, to display, hand out, and/or post... thanks for your support and help in spreading the word! <em>(click image to download)</em></p>
                     </div>
-                    <div className="grid_2"><a href="images/fliers/XCSB-Pamphlet_10212025.pdf" target="_blank"><img src="images/fliers/XCSB-Pamphlet_pg1Thumbnail.png" /><br />Pamphlet: College Radio Condition</a></div>
-                    <div className="grid_2"><a href="images/fliers/saveWCSB_300ppi.pdf" target="_blank"><img src="images/fliers/saveWCSB_thumbnail.png" /><br />Flier: Save WCSB</a> </div>
-                    <div className="grid_2"><a href="images/fliers/theyStoleIt_300ppi.pdf" target="_blank"><img src="images/fliers/theyStoleIt_thumbnail.png" /><br />Flier: Your Created it...</a></div>
-                    <div className="grid_2"><a href="images/fliers/ideaScam_300ppi.pdf" target="_blank"><img src="images/fliers/ideaScam_thumbnail.png" /><br />Flier: Don't fall for the Ideascam</a></div>
+                    <div className="grid_2"><a href="images/fliers/XCSB-Pamphlet_10212025.pdf" target="_blank"><img src={XcsbPamphlet} /><br />Pamphlet: College Radio Condition</a></div>
+                    <div className="grid_2"><a href="images/fliers/saveWCSB_300ppi.pdf" target="_blank"><img src={SaveWCSB} /><br />Flier: Save WCSB</a> </div>
+                    <div className="grid_2"><a href="images/fliers/theyStoleIt_300ppi.pdf" target="_blank"><img src={TheyStoleIt} /><br />Flier: Your Created it...</a></div>
+                    <div className="grid_2"><a href="images/fliers/ideaScam_300ppi.pdf" target="_blank"><img src={IdeaScam} /><br />Flier: Don't fall for the Ideascam</a></div>
                 </section>
             </div>
         </div>
