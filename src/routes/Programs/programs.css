@@ -1,0 +1,128 @@
+.table_programgrid {
+    overflow: auto;
+    width: 100%;
+}
+
+.table_programgrid table {
+    border: 1px solid #dededf;
+    height: 100%;
+    width: 100%;
+    table-layout: auto;
+    border-collapse: collapse;
+    border-spacing: 1px;
+    text-align: left;
+}
+
+.table_programgrid caption {
+    caption-side: top;
+    text-align: left;
+}
+
+.table_programgrid th {
+    border: 1px solid #dededf;
+    background-color: #66ccff;
+    color: #000000;
+    padding: 5px;
+}
+
+.table_programgrid td {
+    border: 1px solid #dededf;
+    padding: 5px;
+}
+
+.table_programgrid tr:nth-child(even) td {
+    background-color: #eeeeee;
+    color: #000000;
+}
+
+.table_programgrid tr:nth-child(odd) td {
+    background-color: #dddddd;
+    color: #000000;
+}
+
+
+/* .table_programgrid {
+    overflow: auto;
+    width: 100%;
+}
+
+.table_programgrid table {
+    border: 1px solid #dededf;
+    height: 100%;
+    width: 100%;
+    table-layout: auto;
+    border-collapse: collapse;
+    border-spacing: 1px;
+    text-align: left;
+}
+
+.table_programgrid caption {
+    caption-side: top;
+    text-align: left;
+}
+
+.table_programgrid th {
+    border: 1px solid #dededf;
+    background-color: #66ccff;
+    color: #000000;
+    padding: 5px;
+}
+
+.table_programgrid td {
+    border: 1px solid #dededf;
+    padding: 0px;
+}
+
+.table_programgrid tr:nth-child(even) td {
+    background-color: #eeeeee;
+    color: #000000;
+}
+
+.table_programgrid tr:nth-child(odd) td {
+    background-color: #dddddd;
+    color: #000000;
+} */
+
+
+
+/* .table_programgrid {
+    overflow: auto;
+    width: 100%;
+}
+
+.table_programgrid table {
+    border: 1px solid #dededf;
+    height: 100%;
+    width: 100%;
+    table-layout: auto;
+    border-collapse: collapse;
+    border-spacing: 1px;
+    text-align: left;
+}
+
+.table_programgrid caption {
+    caption-side: top;
+    text-align: left;
+}
+
+.table_programgrid th {
+    border: 1px solid #dededf;
+    background-color: #66ccff;
+    color: #000000;
+    padding: 5px;
+}
+
+.table_programgrid td {
+    border: 1px solid #dededf;
+    padding: 5px;
+}
+
+.table_programgrid tr:nth-child(even) td {
+    background-color: #eeeeee;
+    color: #000000;
+}
+
+.table_programgrid tr:nth-child(odd) td {
+    background-color: #dddddd;
+    color: #000000;
+} */
