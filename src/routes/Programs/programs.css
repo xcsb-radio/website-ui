@@ -40,6 +40,23 @@
     color: #000000;
 }
 
+.player-bar {
+    border-radius: 10px;
+    padding: 20px;
+    background-color: white;
+    position: fixed;
+    right: 1em;
+    /* display: block; */
+    bottom: 3em;
+}
+
+.listenbutton {
+    background-color: #444;
+    color: #dededf;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
 
 /* .table_programgrid {
     overflow: auto;
