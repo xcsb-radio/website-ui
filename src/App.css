@@ -192,4 +192,13 @@
 }
 .routes-container {
   padding-top: 2em;
+  width: 100%;
+}
+
+:root {
+  --red-highlight: #B73225;
+  --blue-minded: #004E7C;
+  --grey-water: #5C5F58;
+  --lighter-grey: #DCE1E3;
+  --maroon-six: #591C0B;
 }

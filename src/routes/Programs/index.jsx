@@ -121,15 +121,15 @@ function Programs(props) {
                             </div>
                         </section>
                         <div id="main" className="wrapper">
-                            <select value={day} onChange={(e) => handleSetDayShown(e)}>
-                                <option value='Sunday'>Sunday</option>
-                                <option value='Monday'>Monday</option>
-                                <option value='Tuesday'>Tuesday</option>
-                                <option value='Wednesday'>Wednesday</option>
-                                <option value='Thursday'>Thursday</option>
-                                <option value='Friday'>Friday</option>
-                                <option value='Saturday'>Saturday</option>
-                                <option value='Show All'>Show All</option>
+                            <select name={day} value={day} onChange={(e) => handleSetDayShown(e)}>
+                                <option name='Sunday' value='Sunday'>Sunday</option>
+                                <option name='Monday' value='Monday'>Monday</option>
+                                <option name='Tuesday' value='Tuesday'>Tuesday</option>
+                                <option name='Wednesday' value='Wednesday'>Wednesday</option>
+                                <option name='Thursday' value='Thursday'>Thursday</option>
+                                <option name='Friday' value='Friday'>Friday</option>
+                                <option name='Saturday' value='Saturday'>Saturday</option>
+                                <option name='Show All' value='Show All'>Show All</option>
                             </select>
                             <section id="content" className="wide-content">
                                 <div className="table_programgrid">

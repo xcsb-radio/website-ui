@@ -57,6 +57,40 @@
     border-radius: 5px;
 }
 
+.day-header {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+select {
+      &, &::picker(select) {
+    appearance: base-select;    
+  }
+  margin: 1em;
+  font-size: 25px;
+}
+
+@media screen and (max-width: 768px) {
+    .programs-container {
+        width: 100%;
+    }
+
+    .flier-thumbnail {
+        min-width: 7em;
+        height: auto;
+    }
+}
+
+@media screen and (max-width: 432px) {
+    .programs-container {
+        width: 100%;
+    }
+
+    .flier-thumbnail {
+        min-width: 5em;
+        height: auto;
+    }
+}
 
 /* .table_programgrid {
     overflow: auto;
