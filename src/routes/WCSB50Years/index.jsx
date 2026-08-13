@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import './wcsb-50-years.css'
 import Cauldron from '../../assets/WCSBGoesLive_cauldron_04191976.jpg'
+import iframeContents from '../../assets/files/xcsb-whatWasWCSB_stafflist-iframe.html'
 
 function WCSB50Years(props) {
     return (
@@ -69,7 +70,7 @@ function WCSB50Years(props) {
                             <p>This list is based on scans of 54 program guides from 1982 to 2017 (not all program guides were available; many members were added or continued to be active after the 2017). We estimate that the 576 staff members listed here represent about half of all the memebers over our 49 years of existance. We're working on adding more names and correcting dates, stay tuned!</p>
                             <h3><em>(in process)</em></h3>
 
-                            <iframe src="xcsb-whatWasWCSB_stafflist-iframe.html" width="100%" height="600" style={{border:"none"}}></iframe>
+                            <iframe src={iframeContents} width="100%" height="600" style={{border:"none"}}></iframe>
 
                         </div>
                     </div>
