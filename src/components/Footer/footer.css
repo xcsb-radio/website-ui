@@ -5,4 +5,6 @@
     position: fixed;
     width: 100%;
     font-size: 11px;
+    height: 3em;
+    margin-left: -3em;
 }

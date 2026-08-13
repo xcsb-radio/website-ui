@@ -34,7 +34,7 @@ h1, h2, h3, h4, h5, h6{
 /* a,
 a:visited,
 a:active,
-a:hover{color:#0099ff;}
+a:hover{color:#004E7C;}
 a:hover{ text-decoration:none;} */
 
 
@@ -91,7 +91,7 @@ img{ max-width:100%; height:auto;}
 	font-size:20px;
 }
 .menu-toggle.toggled-on{
-	background:#0099ff;
+	background:#004E7C;
 }
 .srt-menu{
 	display:none;
@@ -117,7 +117,7 @@ img{ max-width:100%; height:auto;}
 	font-size:.9em;
 }
 .srt-menu li a:hover{
-	background:#0099ff;
+	background:#004E7C;
 	color:#fff;
 }
 .srt-menu li li a {
@@ -147,7 +147,7 @@ img{ max-width:100%; height:auto;}
 }
 #secondary-navigation ul li a:hover,
 #secondary-navigation ul li.current a{
-	background:#0099ff;
+	background:#004E7C;
 	color:#fff;
 }
 
@@ -173,7 +173,7 @@ img{ max-width:100%; height:auto;}
 }
 
 /*FOOTER*/
-footer{  
+/* footer{  
 	background:#333;
 	color:#ccc;
 	font-size:80%;
@@ -182,12 +182,12 @@ footer{
 footer ul{
 	margin:0 0 0 8%;
 	padding:0;
-}
+} */
 
 
 /*Some more colored elements*/
 a.buttonlink{ 
-	background:#0099ff; 
+	background:#004E7C; 
 	border-radius:7px; 
 	color:#fff;
 	display:block;
@@ -200,7 +200,7 @@ a.buttonlink:hover{
 	background:#887dc2;
 }
 .greenelement{
-	background:#0099ff;
+	background:#004E7C;
 	color:#fff;
 }
 .violetelement{
@@ -391,11 +391,11 @@ ul.srt-menu li li li.sfHover ul {
 .srt-menu li:hover > a,
 .srt-menu li.current a{ 
 	color:#fff;
-	background:#0099ff;
+	background:#004E7C;
 }
 .srt-menu li li:hover > a{
 	color:#fff;
-	background:#0099ff;
+	background:#004E7C;
 }
 
 

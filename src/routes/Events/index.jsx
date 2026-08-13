@@ -42,7 +42,7 @@ function Events(props) {
 
   return (
     <div className="events-container">
-      {Object.keys(eventsList).map(month => <div>
+      {Object.keys(eventsList).map(month => <div className="inner-container">
         <h2 className="month-header" id={`${month}-toggle`}
           onClick={() => handleSetMonthExpanded(month, !isExpanded[month])}>{month}
           {!isExpanded[month] ? <i className="arrow right" id={`${month}-arrow-right`}></i> :

@@ -6,6 +6,7 @@ import Hls from 'hls.js';
 function Programs(props) {
     const days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
     const [day, setDay] = useState(days[new Date().getDay()])
+    const [isPlayerCollapsed, setIsPlayerCollapsed] = useState(false)
 
     const handleSetDayShown = (e) => {
         const dayOption = e.target.value
@@ -121,16 +122,18 @@ function Programs(props) {
                             </div>
                         </section>
                         <div id="main" className="wrapper">
-                            <select name={day} value={day} onChange={(e) => handleSetDayShown(e)}>
-                                <option name='Sunday' value='Sunday'>Sunday</option>
-                                <option name='Monday' value='Monday'>Monday</option>
-                                <option name='Tuesday' value='Tuesday'>Tuesday</option>
-                                <option name='Wednesday' value='Wednesday'>Wednesday</option>
-                                <option name='Thursday' value='Thursday'>Thursday</option>
-                                <option name='Friday' value='Friday'>Friday</option>
-                                <option name='Saturday' value='Saturday'>Saturday</option>
-                                <option name='Show All' value='Show All'>Show All</option>
-                            </select>
+                            <div className="select-container">
+                                <select name={day} value={day} onChange={(e) => handleSetDayShown(e)}>
+                                    <option name='Sunday' value='Sunday'>Sunday</option>
+                                    <option name='Monday' value='Monday'>Monday</option>
+                                    <option name='Tuesday' value='Tuesday'>Tuesday</option>
+                                    <option name='Wednesday' value='Wednesday'>Wednesday</option>
+                                    <option name='Thursday' value='Thursday'>Thursday</option>
+                                    <option name='Friday' value='Friday'>Friday</option>
+                                    <option name='Saturday' value='Saturday'>Saturday</option>
+                                    <option name='Show All' value='Show All'>Show All</option>
+                                </select>
+                            </div>
                             <section id="content" className="wide-content">
                                 <div className="table_programgrid">
                                     <table>
@@ -840,7 +843,10 @@ function Programs(props) {
                             </section>
                         </div>
 
-                        <div className='player-bar' id="player-bar">
+                        <div className='player-bar' id="player-bar" style={isPlayerCollapsed ? {width: '1em'} : null}>
+                            <div onClick={() => setIsPlayerCollapsed(!isPlayerCollapsed)}>
+                                <div className={isPlayerCollapsed ? 'arrow-left' : 'arrow-right'} />
+                                </div>
                             <div className="player-inner">
                                 <div id="now-playing-label">SELECT A SHOW</div>
                                 <audio id="main-audio" controls></audio>

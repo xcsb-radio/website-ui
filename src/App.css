@@ -185,9 +185,10 @@
 
 .app-container {
   padding: 2em;
+  margin-bottom: 2em;
 }
 .header-banner {
-  max-width: 55em;
+  max-width: 45em;
   margin: auto;
 }
 .routes-container {

@@ -18,51 +18,50 @@ import MediaCoverage from './routes/MediaCoverage'
 import WCSB50Years from './routes/WCSB50Years'
 import Footer from './components/Footer'
 import Programs from './routes/Programs'
+import Main from './routes/Main'
 // import Banner from './components/NavBar/Banner'
 
 function App() {
-  // const navigate = useNavigate();
-  // const handleScrollToPlace = (element, pathname) => {
-  //   console.log(element, pathname)
-  //   navigate(pathname)
-  //   const el = document.getElementById(element)
-  //   el.scrollIntoView({ behavior: 'smooth', block: 'start' })
-  // }
-  console.log(import.meta.env.BASE_URL, window.location.pathname, `${import.meta.env.BASE_URL}/xscb-donate`)
   return (
     <>
-    {/* <Banner /> */}
-      <img className="header-banner" src={FlyingV} alt="banner image XCSB" />
+      {/* <Banner /> */}
       <div className="app-container">
         <BrowserRouter>
+          <a href={import.meta.env.BASE_URL}>
+            <img className="header-banner" src={FlyingV} alt="banner image XCSB" />
+          </a>
           <NavBar />
           <div className="routes-container">
-          <Routes>
-            <Route
-              path={`${import.meta.env.BASE_URL}`}
-              element={<Home />}
-            />
-            <Route
-              path={`${import.meta.env.BASE_URL}/xcsb-donate`}
-              element={<Donate />}
-            />
-            <Route
-              path={`${import.meta.env.BASE_URL}/xcsb-mediaCoverage`}
-              element={<MediaCoverage />}
-            />
-            <Route
-              path={`${import.meta.env.BASE_URL}/xcsb-events`}
-              element={<Events />}
-            />
-            <Route
-              path={`${import.meta.env.BASE_URL}/xcsb-WCSB50Years`}
-              element={<WCSB50Years />}
-            />
-            <Route
-              path={`${import.meta.env.BASE_URL}/xcsb-programDetail`}
-              element={<Programs />}
-            />
-          </Routes>
+            <Routes>
+              <Route
+                path={`${import.meta.env.BASE_URL}`}
+                element={<Main />}
+              />
+              <Route
+                path={`${import.meta.env.BASE_URL}/about`}
+                element={<Home />}
+              />
+              <Route
+                path={`${import.meta.env.BASE_URL}/xcsb-donate`}
+                element={<Donate />}
+              />
+              <Route
+                path={`${import.meta.env.BASE_URL}/xcsb-mediaCoverage`}
+                element={<MediaCoverage />}
+              />
+              <Route
+                path={`${import.meta.env.BASE_URL}/xcsb-events`}
+                element={<Events />}
+              />
+              <Route
+                path={`${import.meta.env.BASE_URL}/xcsb-WCSB50Years`}
+                element={<WCSB50Years />}
+              />
+              <Route
+                path={`${import.meta.env.BASE_URL}/xcsb-programDetail`}
+                element={<Programs />}
+              />
+            </Routes>
           </div>
         </BrowserRouter>
       </div>

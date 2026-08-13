@@ -1,3 +1,13 @@
+.events-container {
+    border-radius: 5px;
+    padding: 1em;
+    background-color: #5C5F58;
+}
+
+.inner-container {
+    /* background-color: #004E7C; */
+}
+
 .event-blurb {
     display: grid;
     /* flex-direction: row; */
@@ -10,6 +20,7 @@
     width: 80%;
     border: 1px solid black;
     border-radius: 5px;
+    background-color: #DCE1E3;
 }
 
 .date {
@@ -27,7 +38,7 @@
     border: 1px solid black;
     border-radius: 5px;
     padding: 1em;
-    box-shadow: #333 3px 3px 5px;
+    box-shadow: #333 2px 2px 5px;
     z-index: 9999999;
 }
 
@@ -56,7 +67,7 @@
 }
 
 .arrow {
-    border: solid black;
+    border: solid #f3f3f3;
     border-width: 0 3px 3px 0;
     display: inline-block;
     padding: 3px;
@@ -88,6 +99,11 @@
     margin-left: 1em;
     margin-right: auto;
     text-align: left;
+    border-radius: 5px;
+    padding: 0.5em;
+    max-width: 20em;
+    color: #f3f3f3;
+    background-color: #002c45;
 }
 
 @media screen and (max-width: 768px) {

@@ -44,7 +44,7 @@ h1, h2, h3, h4, h5, h6{
 a,
 a:visited,
 a:active,
-a:hover{color:#0099ff;}
+a:hover{color:#004E7C;}
 a:hover{ text-decoration:none;}
 
 
@@ -108,7 +108,7 @@ img{ max-width:100%; height:auto;}
 	font-size:20px;
 }
 .menu-toggle.toggled-on{
-	background:#0099ff;
+	background:#004E7C;
 }
 .srt-menu{
 	display:none;
@@ -132,7 +132,7 @@ img{ max-width:100%; height:auto;}
 	text-decoration:none;
 }
 .srt-menu li a:hover{
-	background:#0099ff;
+	background:#004E7C;
 	color:#fff;
 }
 .srt-menu li li a {
@@ -161,7 +161,7 @@ img{ max-width:100%; height:auto;}
 }
 #secondary-navigation ul li a:hover,
 #secondary-navigation ul li.current a{
-	background:#0099ff;
+	background:#004E7C;
 	color:#fff;
 }
 
@@ -187,7 +187,7 @@ img{ max-width:100%; height:auto;}
 }
 
 /*FOOTER*/
-footer{  
+/* footer{  
 	clear:both;
 	font-size:80%;
 	padding:20px 0;
@@ -195,7 +195,7 @@ footer{
 footer ul{
 	margin:0;
 	padding:0;
-}
+} */
 
 /*colors and backgrounds*/
 body{
@@ -205,20 +205,20 @@ h1, h2, h3, h4, h5, h6{
 	color:#333; 
 }
 
-footer{ 
+/* footer{ 
 	background:#333;
 	color:#ccc;
-}
-footer h1, footer h2, footer h3, footer h4{ 
+} */
+/* footer h1, footer h2, footer h3, footer h4{ 
 	color:#CCC; 
 	margin-bottom:10px;
-}
-footer ul{
+} */
+/* footer ul{
 	margin:0 0 0 8%;
-}
+} */
 
 a.buttonlink{ 
-	background:#0099ff; 
+	background:#004E7C; 
 	border-radius:7px; 
 	color:#fff;
 	display:block;
@@ -229,7 +229,7 @@ a.buttonlink{
 }
 
 a.buttonlinkwide{ 
-	background:#0099ff; 
+	background:#004E7C; 
 	border-radius:7px; 
 	color:#fff;
 	display:block;
@@ -240,7 +240,7 @@ a.buttonlinkwide{
 	text-decoration:none;
 }
 a.buttonlinknarrow{ 
-	background:#0099ff; 
+	background:#004E7C; 
 	border-radius:7px; 
 	color:#fff;
 	display:block;
@@ -256,7 +256,7 @@ a.buttonlink:hover{
 	background:#8dbc01;
 }
 .greenelement{
-	background:#0099ff;
+	background:#004E7C;
 	color:#fff;
 }
 .violetelement{
@@ -435,7 +435,7 @@ ul.srt-menu li li li.sfHover ul {
 	height:45px;
 }
 .srt-menu a, .srt-menu a:visited  { /* visited pseudo selector so IE6 applies text colour*/
-	color:			#0099ff;	
+	color:			#004E7C;	
 }
 .srt-menu li li a {
 		border-top:		1px solid rgba(255,255,255,.2);
@@ -455,11 +455,11 @@ ul.srt-menu li li li.sfHover ul {
 .srt-menu li:hover > a,
 .srt-menu li.current a{ 
 	color:#fff;
-	background:#0099ff;
+	background:#004E7C;
 }
 .srt-menu li li:hover > a{
 	color:#fff;
-	background:#0099ff;
+	background:#004E7C;
 }
 
 
@@ -577,7 +577,7 @@ CUSTOM STYLESHEET -added to Simple Responsive Template
   align-items: center; /* Horizontally centers items within the flex container */
   justify-content: center;
   height: 150px;
-  border: 3px solid #0099ff;
+  border: 3px solid #004E7C;
 }
 .caption {
   text-align: center; /* Ensures the caption text is centered */

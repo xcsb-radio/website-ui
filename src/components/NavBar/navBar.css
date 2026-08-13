@@ -11,7 +11,7 @@
 }
 
 .srt-menu {
-    color: #0099ff;
+    color: #004E7C;
     text-decoration: none;
     display: flex;
     flex-direction: row;
@@ -20,18 +20,18 @@
 
 .srt-menu :hover {
     color: white;
-    background-color: #0099ff;
+    background-color: #004E7C;
 }
 
 ul {
     text-decoration: none;
     list-style-type: none;
-    color: #0099ff;
+    color: #004E7C;
 }
 
 li a {
-    padding: 1em;
-    color: #0099ff;
+    /* padding: 1em; */
+    color: #004E7C;
     text-decoration: none;
     white-space: nowrap;
 }
@@ -73,4 +73,17 @@ li a {
 .scroll-image.shrunk {
     transform: translateX(-70%) scale(0.2);
     /* Shrinks image to 50% size */
+}
+
+@media screen and (max-width: 899px) {
+    .srt-menu-mobile {
+        display: flex;
+        flex-direction: column;
+        font-size: 85px;
+        line-height: 95px;
+        color: black;
+    }
+    .nav-item {
+        padding: 5px;
+    }
 }
