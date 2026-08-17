@@ -12,7 +12,7 @@ function Donate(props) {
                             <h1><em>Donate to support XCSB!</em></h1>
                             <p>THANK YOU for donating to XCSB!  Your donations will enable us to rent a studio space, rebuild our broadcast studio, pay for the numerous licensing fees required to for music broadcasting, and all the myriad of little things required to restore our programming services to the community.</p>
 
-                            <h2><a href="https://square.link/u/Eu7UreAU" className="buttonlinkwide" target="_blank"> &#9654; &nbsp;DONATE NOW&nbsp; &#9664;</a></h2>
+                            <h2><a href="https://square.link/u/Eu7UreAU" className="buttonlinkwide" target="_blank">DONATE NOW</a></h2>
 
                             <p>You can also donate by check! Please make checks out to The Reading Room CLE, <i>with “XCSB2b” in the memo line</i> to designate it as a donation to the station.  Mail checks to:</p>
 

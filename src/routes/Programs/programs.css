@@ -127,13 +127,13 @@ th {
     font-size: 35px;
 }
 p {
-    font-size: 30px;
-    line-height: 30px;
+    /* font-size: 30px;
+    line-height: 30px; */
     font-weight: bold;
 }
 tr {
-    font-size: 30px;
-    line-height: 30px;
+    /* font-size: 30px;
+    line-height: 30px; */
     height: 2em;
 }
 }

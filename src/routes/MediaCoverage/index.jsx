@@ -14,7 +14,7 @@ import IdeaStream from '../../assets/mediaCoverageCarousel/ideastream_720.png'
 import 'react-multi-carousel/lib/styles.css';
 import CarouselModule from "react-multi-carousel";
 const Carousel = CarouselModule.default || CarouselModule;
-import iframeContents from '../../assets/files/xcsb-mediaCoverage-cityCouncilComments_iframe.html'
+// import iframeContents from '../../assets/files/xcsb-mediaCoverage-cityCouncilComments_iframe.html'
 
 function MediaCoverage(props) {
     const responsive = {
@@ -248,7 +248,7 @@ function MediaCoverage(props) {
                         </div>
                         <div className="grid_8">
                             {/* TODO: This needs to be its own component */}
-                            <iframe src={iframeContents} width="100%" height="600" style={{ border: "1px solid black" }}></iframe>
+                            {/* <iframe src={iframeContents} width="100%" height="600" style={{ border: "1px solid black" }}></iframe> */}
                         </div>
                     </section>
                 </section>

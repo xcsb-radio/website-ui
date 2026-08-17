@@ -38,27 +38,27 @@ function App() {
                 element={<Main />}
               />
               <Route
-                path={`${import.meta.env.BASE_URL}/about`}
+                path={`${import.meta.env.BASE_URL}about`}
                 element={<Home />}
               />
               <Route
-                path={`${import.meta.env.BASE_URL}/xcsb-donate`}
+                path={`${import.meta.env.BASE_URL}xcsb-donate`}
                 element={<Donate />}
               />
               <Route
-                path={`${import.meta.env.BASE_URL}/xcsb-mediaCoverage`}
+                path={`${import.meta.env.BASE_URL}xcsb-mediaCoverage`}
                 element={<MediaCoverage />}
               />
               <Route
-                path={`${import.meta.env.BASE_URL}/xcsb-events`}
+                path={`${import.meta.env.BASE_URL}xcsb-events`}
                 element={<Events />}
               />
               <Route
-                path={`${import.meta.env.BASE_URL}/xcsb-WCSB50Years`}
+                path={`${import.meta.env.BASE_URL}xcsb-WCSB50Years`}
                 element={<WCSB50Years />}
               />
               <Route
-                path={`${import.meta.env.BASE_URL}/xcsb-programDetail`}
+                path={`${import.meta.env.BASE_URL}xcsb-programDetail`}
                 element={<Programs />}
               />
             </Routes>

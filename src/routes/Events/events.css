@@ -126,4 +126,7 @@
         min-width: 5em;
         height: auto;
     }
+    .event-description-box {
+        min-width: 15em;
+    }
 }

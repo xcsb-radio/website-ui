@@ -4,7 +4,7 @@ import './main.css'
 function Main(props) {
   return (
     <div className="main-container">
-        Homepage.
+        <h1>XCSB</h1>
     </div>
   )
 }

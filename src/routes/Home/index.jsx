@@ -23,7 +23,7 @@ function Home(props) {
 
                             <h1>
                                 <a href="https://xcsb.live/public/xcsb-cleveland" onclick="openPlayer(event, this.href)" className="buttonlinkwide">
-                                    &#9654; &nbsp;&#9654; &nbsp;Listen Now!&nbsp; &#9664;&nbsp; &#9664;
+                                    Listen Now!
                                 </a>
                             </h1>
 
@@ -47,9 +47,9 @@ function Home(props) {
 
                             <p>Of course this new effort is going require raising funds &ndash; for equipment, studio rental, broadcast rights licensing,
                                 coffee... And we missed our annual Radiothon, so we have some catching up to do, financially.
-                                <Link to="xcsb-donate">PLEASE DONATE!</Link> We are grateful for your support!</p>
+                                &nbsp;<Link to="xcsb-donate">PLEASE DONATE!</Link> We are grateful for your support!</p>
 
-                            <h2><Link to="xcsb-donate" className="buttonlinkwide"> &#9654; &nbsp;DONATE to XCSB&nbsp; &#9664;</Link></h2>
+                            <h2><Link to="xcsb-donate" className="buttonlinkwide">DONATE to XCSB</Link></h2>
 
                         </div>
 
@@ -122,43 +122,6 @@ function Home(props) {
                             <h1 className="first-header">What else can you do?</h1>
 
                             <p>&#9654; EVENTS!</p>
-                            {/* <!----- MARCH ------>   */}
-                            <p><em>&nbsp;&nbsp;MARCH &mdash;</em></p>
-                            <ul>
-                                <li>Sun. 3/1: XCSB STARTs REALTIME INTERNET STREAMING!!</li>
-                                <li>Thur. 3/12: DJ’S VINYL NIGHT at Little Rose Tavern, 14206 Lorain Ave., 8:30-Midnight.  Curated vinyl sets by XCSB DJs.</li>
-                                <li>Fri. 3/27: Album Release Party &amp; XCSB Fundraiser at Spotlight Cleveland, 8701 Madison Ave., 6pm Happy Hour.  XCSB DJ JT will be giving away merch and CD’s to celebrate the release of BLUE Album from J TEMP 13, plus other XCSB DJ's spinning records.</li>
-                            </ul>
-                            {/* <!----- APRIL ------>   */}
-                            <p><em>&nbsp;&nbsp;APRIL &mdash;</em></p>
-                            <ul>
-                                <li>Sat. 4/11: DJ’S VINYL NIGHT at Bad Medicine Bar 13334 Lorain Ave., 8pm-Midnight. Curated vinyl sets by XCSB DJs.</li>
-                                <li>Sat. 4/11: XSCB will have a table at <a href="https://www.instagram.com/p/DU_JF7ZkXl2/" target="blank">The Lottery League DRAFT NIGHT</a>, at Ingenuity, 5401 Hamilton, 7:30pm-til?</li>
-                                <li>Sat. 04/18: RECORD STORE DAY.  Celebrate with us at your favorite record stores:<br />
-                                    - The Vinyl Groove Records 5100 Pearl Road; Time/TBA<br />
-                                    - Late Night Records 2602 Walton Ave., 8pm-Midnight<br />
-                                    - Mistake By The Lake Records 6502 Lorain Ave., 12pm-6pm
-                                </li>
-                                <li>Sat. 04/18: DRUMPLAY record release party and XCSB benefit, at the <a href="https://www.ticketweb.com/event/drumplay-release-party-benefit-for-treelawn-social-club-tickets/14147624" target="_blank">Treelawn Social Club</a>, 15335 Waterloo Rd., 7:30pm. Drumplay is a Cleveland-based world/jazz ensemble, featuring former WCSB programmer James Onysko. Proceeds benefit XCSB</li>
-                            </ul>
-                            {/* <!----- MAY ------>                       */}
-                            <p><em>&nbsp;&nbsp;MAY &mdash;</em></p>
-                            <ul>
-                                <li>Sun. 5/10: XCSB STARTs WEBCASTING LIVE from our new studio on Waterloo!!</li>
-                                <li>Fri. 5/15: DJ’S VINYL NIGHT at Dunlap’s Corner Bar 3258 W 32nd St.  Curated vinyl sets by XCSB DJs.</li>
-                                <li>Sat. 5/16: 50th Anniversary Show at The Treelawn Social Club, 15335 Waterloo Rd *More info to come</li>
-                            </ul>
-                            {/* <!----- JUNE ------>                      */}
-                            <p><em>&nbsp;&nbsp;JUNE &mdash;</em></p>
-                            <ul>
-                                <li>Sat. 7/27: XSCB will have a table at <a href="https://www.instagram.com/p/DU_JF7ZkXl2/" target="blank">The Lottery League BIG SHOW</a>, at Ingenuity, 5401 Hamilton, 7:30pm-til?</li>
-                            </ul>
-
-                            {/* <!----- JULY ------>                      */}
-                            <p><em>&nbsp;&nbsp;JULY &mdash;</em></p>
-                            <ul>
-                                <li>Fri. 7/10: XCSB REGGAE FEST 'The Harder They Come The Harder They Fall'. Happy Dog, 5801 Detroit Ave.  Live bands and curated vinyl DJ’s sets.  $12 suggested door cover. XCSB FUNDRAISER-100% of donations go to XCSB!</li>
-                            </ul>
                             {/* <!----- AUGUST ------>   
 <!----- SEPTEMBER ------>  
 <!----- OCTOBER ------>                       */}
