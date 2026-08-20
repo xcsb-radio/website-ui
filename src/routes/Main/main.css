@@ -1,0 +1,56 @@
+.main-container {
+    background-color: #333333;
+    isolation: isolate;
+    pointer-events: none;
+    min-height: 30em;
+}
+.main-lead {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    /* align-content: space-between; */
+    justify-content: space-evenly;
+}
+/* .turntable-image {
+    max-width: 10em;
+} */
+.headline {
+    color: #f3f3f3;
+    text-align: left;
+    /* margin-left: 0.5em; */
+    font-size: 2.7em;
+    line-height: 1em;
+    font-weight: 100;
+    font-family: Helvetica, Arial, sans-serif;
+}
+.img-background {
+    /* background-image: url('../../assets/turntable.jpg'); */
+    /* min-width: 40em; */
+    height: fit-content;
+    background-position: center; 
+    background-size: cover; 
+    height: 20em;
+}
+.main-container::before {
+  content: ""; 
+  position: absolute;
+  inset: 0; /* Stretches the pseudo-element to fill the parent entirely */
+  background-image: url('../../assets/turntable.jpg');
+  background-size: cover;
+  background-position: center;
+  opacity: 0.4; /* Controls your background transparency (0.0 to 1.0) */
+  z-index: -1; /* Pushes the image layer back behind the text */
+}
+.buttons-container {
+    pointer-events: auto;
+}
+
+@media screen and (max-width: 768px) {
+  .img-background {
+    min-width: 100%;
+  }
+  .headline {
+    font-size: 2.2em;
+    margin-left: 1em;
+  }
+}

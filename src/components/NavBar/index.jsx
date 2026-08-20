@@ -40,7 +40,6 @@ function NavBar(props) {
         setIsOpen(false);
         navigate(link);
     }
-    console.log('width...', width)
     return width && width > 900 ? (
         <nav className="navbar-container" role="navigation">
             <ul className="srt-menu-new">
@@ -66,25 +65,25 @@ function NavBar(props) {
             </ul>
         </nav>
     ) : (
-        <div>
-            <img style={{ width: '40px', height: '30px' }} src={Burger} onClick={() => setIsOpen(!isOpen)} />
+        <nav>
+            <img style={{ width: '40px', height: '30px', zIndex: '9999999999999' }} src={Burger} onClick={() => setIsOpen(!isOpen)} />
             {isOpen ? <ul className="srt-menu-mobile">
-                <li className={window.location.pathname.includes('/about') ? "current nav-item" : 'nav-item'}
+                <li className={window.location.pathname.includes('/about') ? "current" : 'nav-item'}
                     onClick={() => handleCloseAndNavigate(`${import.meta.env.BASE_URL}/about`)}>
                     About</li>
-                <li className={window.location.pathname.includes('/xcsb-programDetail') ? "current nav-item" : 'nav-item'}
+                <li className={window.location.pathname.includes('/xcsb-programDetail') ? "current" : 'nav-item'}
                     onClick={() => handleCloseAndNavigate(`${import.meta.env.BASE_URL}/xcsb-programDetail`)}>
                     Our Programs</li>
-                <li className={window.location.pathname.includes('/xcsb-donate') ? "current nav-item" : 'nav-item'}
+                <li className={window.location.pathname.includes('/xcsb-donate') ? "current" : 'nav-item'}
                     onClick={() => handleCloseAndNavigate(`${import.meta.env.BASE_URL}/xcsb-donate`)}>
                     Donate</li>
-                <li className={window.location.pathname.includes('/xcsb-mediaCoverage') ? "current nav-item " : 'nav-item'}
+                <li className={window.location.pathname.includes('/xcsb-mediaCoverage') ? "current " : 'nav-item'}
                     onClick={() => handleCloseAndNavigate(`${import.meta.env.BASE_URL}/xcsb-mediaCoverage`)}>
                     What Happened?</li>
-                <li className={window.location.pathname.includes('/xcsb-WCSB50Years') ? "current nav-item" : 'nav-item'}
+                <li className={window.location.pathname.includes('/xcsb-WCSB50Years') ? "current" : 'nav-item'}
                     onClick={() => handleCloseAndNavigate(`${import.meta.env.BASE_URL}/xcsb-WCSB50Years`)}>
                     WCSB - 50 Years!</li>
-                <li className={window.location.pathname.includes('/xcsb-events') ? "current nav-item" : 'nav-item'}
+                <li className={window.location.pathname.includes('/xcsb-events') ? "current" : 'nav-item'}
                     onClick={() => handleCloseAndNavigate(`${import.meta.env.BASE_URL}/xcsb-events`)}>
                     Events</li>
                 <li>
@@ -93,7 +92,7 @@ function NavBar(props) {
                     </div>
                 </li>
             </ul> : null}
-        </div>
+        </nav>
     )
 }
 

@@ -16,6 +16,7 @@
     color: #004E7C;
     text-decoration: none;
     background-color: #f9f9f9;
+    opacity: 0.9;
     /* margin-top: -0.5em; */
 }
 
@@ -48,6 +49,8 @@ li a {
     margin: 3px;
     white-space: nowrap;
     border-radius: 5px;
+    color: #f9f9f9;
+    background-color: #004E7C;
 }
 
 .navbar-container {
@@ -69,6 +72,9 @@ li a {
     min-height: 8em;
     padding-top: 20px;
 }
+/* nav {
+    z-index: top;
+} */
 
 /* Base styles for the image */
 .scroll-image {

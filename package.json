@@ -2,7 +2,7 @@
   "name": "website-ui",
   "homepage": "https://xcsb-radio.github.io/website-ui",
   "private": true,
-  "version": "1.0.2",
+  "version": "1.2.4",
   "type": "module",
   "scripts": {
     "dev": "vite",
