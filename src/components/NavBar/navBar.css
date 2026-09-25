@@ -42,6 +42,7 @@ li a {
     margin: 3px;
     white-space: nowrap;
     background-color: #f9f9f9;
+    cursor: pointer;
 }
 
 .current {

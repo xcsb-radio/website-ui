@@ -111,6 +111,10 @@
         width: 100%;
     }
 
+    .event-description-box {
+        min-width: 20em;
+    }
+
     .flier-thumbnail {
         min-width: 7em;
         height: auto;
@@ -126,6 +130,7 @@
         min-width: 5em;
         height: auto;
     }
+
     .event-description-box {
         min-width: 15em;
     }
