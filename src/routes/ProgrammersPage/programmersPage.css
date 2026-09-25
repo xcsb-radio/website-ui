@@ -1,0 +1,25 @@
+        .audio-row {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 8px;
+        }
+
+        /* Target the audio tag specifically */
+        audio.compact-player {
+            width: 180px;
+            /* Standard is usually 300px */
+            height: 30px;
+            /* Slims down the vertical profile */
+        }
+
+        /* Optional: Hide the volume controls to save more horizontal space */
+        /* This works in Chrome/Edge/Safari */
+        audio.compact-player::-webkit-media-controls-volume-control-container,
+        audio.compact-player::-webkit-media-controls-mute-button {
+            display: none !important;
+        }
+
+        .programmers-page-container {
+            background-color: rgb(243,243,243);
+        }
