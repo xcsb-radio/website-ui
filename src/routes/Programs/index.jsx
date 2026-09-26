@@ -1,8 +1,6 @@
 import { useState, useEffect } from 'react'
 import './programs.css'
 import MasterRadio from "../../assets/channelMasterRadio_300t.png"
-import showCsvData from '../../assets/programs.csv'
-import Papa from 'papaparse'
 
 const ShowRow = (props) => {
     const formattedTime = () => {
@@ -16,7 +14,7 @@ const ShowRow = (props) => {
     }
     return (
         (props.selectedDay === props.day) || (props.selectedDay === 'Show All') ? <tr>
-            <td style={{whiteSpace: 'nowrap'}}>{formattedTime()}</td>
+            <td style={{ whiteSpace: 'nowrap' }}>{formattedTime()}</td>
             <td>{props.showName}</td>
             <td>{props.djName}</td>
             <td><span className="listenbutton" onClick={() => props.playArchive(props.showName, props.day, props.startTime)}>Listen</span></td>
@@ -27,21 +25,7 @@ const ShowRow = (props) => {
 function Programs(props) {
     const days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
     const [day, setDay] = useState(days[new Date().getDay()])
-    const [parsedData, setParsedData] = useState([]);
-
-    useEffect(() => {
-        if (!parsedData.length) {
-            Papa.parse(showCsvData, {
-                download: true,
-                header: true,
-                complete: (results) => {
-                    // remove entries that are missing show titles from being displayed
-                    const parsedWithShowsPresent = results.data.filter(i => i.SHOW_TITLE )
-                    setParsedData(parsedWithShowsPresent)
-                }
-            });
-        }
-    }, []);
+    const { parsedData } = props;
 
     const handleSetDayShown = (e) => {
         const dayOption = e.target.value

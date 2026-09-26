@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import './home.css'
 import { Link } from 'react-router-dom'
-import FundraisingBanner from '../../assets/xcsbFundraisingBanner-01242026_1200.png'
+import FundraisingBanner from '../../assets/xcsbFundraisingBanner_1020x680.jpg'
 import XcsbSchedule from '../../assets/XCSBSched_20260301_thumb.png'
 import XcsbPamphlet from '../../assets/fliers/XCSB-Pamphlet_pg1Thumbnail.png'
 import SaveWCSB from '../../assets/fliers/saveWCSB_thumbnail.png'
@@ -30,16 +30,13 @@ function Home(props) {
                             <p>Thanks to an outpouring of support from our listeners in the Greater Cleveland (and around the country),
                                 and a monumental effort by our dedicated team of volunteers, we are now <a href="https://xcsb.live/public/xcsb-cleveland" onclick="openPlayer(event, this.href)">STREAMING AUDIO</a> with new shows from many of your favorite (former) WCSB DJs! </p>
 
-                            <p>Here's our initial program schedule (click the thumbnail for full PDF - updated 3/15/26).</p>
+                            <p>Here's our program schedule (click the thumbnail for full PDF - updated 9/11/26).</p>
 
                             <p style={{ textAlign: 'center' }}>
-                                <a href="files/XCSB_schedule.pdf" target="_blank"><img src={XcsbSchedule} /></a>
+                                <a href="https://res.cloudinary.com/cheesecake/image/upload/v1790343891/xcsb/XCSB_Schedule-20260911.pdf" target="_blank">
+                                <img src={XcsbSchedule} />
+                                </a>
                             </p>
-
-                            <p> THIS IS ONLY THE BEGINNING! We are still making adjustments,
-                                AND will be expanding our roster on 5/10 when we move into our new studio space on Waterloo Rd!
-                                There's so much more to come, but we could not wait to get back to our primary mission: sharing the
-                                programming that we are so passionate about, and that is only available here, on XCSB! </p>
                         </div>
 
                         <div className="grid_6">
@@ -121,14 +118,7 @@ function Home(props) {
                         <div id="whatCanIDo" className="grid_4">
                             <h1 className="first-header">What else can you do?</h1>
 
-                            <p>&#9654; EVENTS!</p>
-                            {/* <!----- AUGUST ------>   
-<!----- SEPTEMBER ------>  
-<!----- OCTOBER ------>                       */}
-                            <p><em>&nbsp;&nbsp;OCTOBER &mdash;</em></p>
-                            <ul>
-                                <li>Save the date: Fri. 10/30/2026: Our annual HALLOWEEN BALL, at the Beachland!</li>
-                            </ul>
+                            <p><Link to={import.meta.env.BASE_URL + 'xcsb-events'}>&#9654; EVENTS!</Link></p>
 
                             <p>&#9654; KEEP LISTENING:</p>
                             <ul>
