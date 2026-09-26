@@ -1,5 +1,7 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import Hls from 'hls.js';
+import Papa from 'papaparse'
+import showCsvData from './assets/programs.csv'
 import reactLogo from './assets/react.svg'
 import viteLogo from './assets/vite.svg'
 import heroImg from './assets/hero.png'
@@ -24,10 +26,27 @@ import ProgrammersPage from './routes/ProgrammersPage'
 // import Banner from './components/NavBar/Banner'
 
 function App() {
-  const [isPlayerCollapsed, setIsPlayerCollapsed] = useState(false)
   const [hlsInstance, setHlsInstance] = useState(null);
+  const [isPlayerCollapsed, setIsPlayerCollapsed] = useState(!hlsInstance)
+  const [parsedData, setParsedData] = useState([]);
+
   const STATION_ID = "XCSB";
   const STATION_TZ = "America/New_York";
+
+  useEffect(() => {
+    if (!parsedData.length) {
+      console.log('parsing...')
+      Papa.parse(showCsvData, {
+        download: true,
+        header: true,
+        complete: (results) => {
+          // remove entries that are missing show titles from being displayed
+          const parsedWithShowsPresent = results.data.filter(i => i.SHOW_TITLE)
+          setParsedData(parsedWithShowsPresent)
+        }
+      });
+    }
+  }, []);
 
   function calculateRecentTimestamp(dayName, timeStr) {
     const days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
@@ -136,7 +155,7 @@ function App() {
             <Routes>
               <Route
                 path={`${import.meta.env.BASE_URL}`}
-                element={<Main />}
+                element={<Main parsedData={parsedData} />}
               />
               <Route
                 path={`${import.meta.env.BASE_URL}about`}
@@ -160,7 +179,7 @@ function App() {
               />
               <Route
                 path={`${import.meta.env.BASE_URL}xcsb-programDetail`}
-                element={<Programs playArchive={playArchive} calculateRecentTimestamp={calculateRecentTimestamp} />}
+                element={<Programs playArchive={playArchive} calculateRecentTimestamp={calculateRecentTimestamp} parsedData={parsedData} />}
               />
               <Route
                 path={`${import.meta.env.BASE_URL}xcsb-programmers`}

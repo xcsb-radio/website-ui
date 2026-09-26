@@ -78,6 +78,25 @@
   color: #fff;
 }
 
+.now-playing-container {
+  /* background-color: #DCE1E3; */
+  margin: 1em;
+  border-radius: 10px;
+  background-image: url('../../assets/tape.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: fit-content;
+  padding: 1em;
+}
+
+
+.now-playing-text {
+  color: #591C0B;
+  rotate: -9deg;
+}
+
 @media screen and (max-width: 768px) {
   .img-background {
     min-width: 100%;
