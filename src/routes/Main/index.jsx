@@ -3,21 +3,30 @@ import './main.css'
 import Turntable from '../../assets/turntable.jpg'
 import AppThumbnail from '../../assets/xcsbPhoneApp_200x381.png'
 import {eventsList} from '../../assets/files/events'
-import { Link } from 'react-router-dom'
+import { NavLink } from 'react-router-dom'
 
 function Main(props) {
   const today = new Date()
   const currentMonth = today.toLocaleString('default', {month: 'long'})
   const currentDay = today.toLocaleDateString('en-US', { weekday: 'long' })
   const currentHour = today.getHours()
-  const currentShow = props.parsedData.find(i => (i.DAY === currentDay && i.START_TIME === `${currentHour}:00`) || (i.DAY === currentDay && i.START_TIME === `${currentHour - 1}:00`))
+  const currentShow = props.parsedData.find(i => (i.DAY === currentDay && i.START_TIME === `${currentHour}:00`) || (i.DAY === currentDay && i.START_TIME === `${currentHour - 1}:00`) || (i.DAY === currentDay && i.START_TIME === `${currentHour - 2}:00`) || (i.DAY === currentDay && i.START_TIME === `${currentHour - 3}:00`))
+  const curentShow2 = () => {
+    if (props.parsedData.find(i => (i.DAY === currentDay && i.START_TIME === `${currentHour}:00`))) {
+      return props.parsedData.find(i => (i.DAY === currentDay && i.START_TIME === `${currentHour}:00`))
+    } else if (props.parsedData.find(i => (i.DAY === currentDay && i.START_TIME === `${currentHour - 1}:00`))) {
+      return props.parsedData.find(i => (i.DAY === currentDay && i.START_TIME === `${currentHour - 1}:00`))
+    } else if (props.parsedData.find(i => (i.DAY === currentDay && i.START_TIME === `${currentHour - 2}:00`))) {
+      return props.parsedData.find(i => (i.DAY === currentDay && i.START_TIME === `${currentHour - 2}:00`))
+    }
+  }
   return (
     <div className="main-container">
       <div className="main-lead">
         <div className="img-background">
           <h1 className="headline">Radio for the community,</h1>
           <h1 className="headline">by the community.</h1>
-          <div className='now-playing-container'>
+          <div className='now-playing-container special-elite-regular'>
             <p className="now-playing-text"><span style={{fontWeight: 'bold', color: '#444444'}}>Now playing:</span> {currentShow?.SHOW_TITLE}</p>
             <p className="now-playing-text">{currentShow ? currentShow['DJ NAME'] : null}</p>
             </div>
@@ -39,7 +48,7 @@ function Main(props) {
             </a>
           </h1>
           <div className='events-teaser'>
-            <Link to='xcsb-events' style={{textDecoration: 'none'}}>
+            <NavLink to='/xcsb-events' style={{textDecoration: 'none'}}>
             <h2 className='events-teaser-header'>Come see us in person at our next community event!</h2>
             <div style={{display: 'flex', flexDirection: 'column'}}>
               <h3 className='events-teaser-blurb'>{eventsList[currentMonth][0].eventName}</h3>
@@ -49,7 +58,7 @@ function Main(props) {
             </div>
             <p className='events-teaser-blurb'>{eventsList[currentMonth][0].description}</p>
             <p className='events-teaser-blurb'>More happenings...</p>
-            </Link>
+            </NavLink>
           </div>
         </div>
       </div>

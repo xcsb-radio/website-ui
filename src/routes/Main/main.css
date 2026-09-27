@@ -80,15 +80,16 @@
 
 .now-playing-container {
   /* background-color: #DCE1E3; */
-  margin: 1em;
+  /* margin: 1em; */
   border-radius: 10px;
   background-image: url('../../assets/tape.png');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  width: 100%;
+  /* width: 100%; */
+  max-width: 35em;
   height: fit-content;
-  padding: 1em;
+  padding: 3em 2em 4em;
 }
 
 
@@ -97,7 +98,21 @@
   rotate: -9deg;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1336px) {
+  .buttons-container {
+    margin-top: 3em;
+}
+}
+
+@media screen and (max-width: 990px) {
+  .now-playing-container {
+    max-width: 35em;
+    padding: 3em 3em 4em 3em;
+    margin: -2em 0 2em 0;
+  }
+}
+
+@media screen and (max-width: 800px) {
   .img-background {
     min-width: 100%;
   }
@@ -105,5 +120,10 @@
   .headline {
     font-size: 2.2em;
     margin-left: 1em;
+  }
+  .now-playing-container {
+    max-width: 35em;
+    padding: 4em;
+    margin: -2em 0 2em 0;
   }
 }

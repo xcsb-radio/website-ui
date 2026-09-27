@@ -209,6 +209,14 @@
   --maroon-six: #591C0B;
 }
 
+.special-elite-regular {
+  font-family: "Special Elite", system-ui;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 22px;
+}
+
+
 @media screen and (max-width: 768px) {
   .header-banner {
     max-width: 100%;

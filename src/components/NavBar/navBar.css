@@ -55,15 +55,21 @@ li a {
 }
 
 .navbar-container {
-    /* display: flex;
-    flex-direction: row; */
     width: 100%;
     font-size: 16px;
     font-weight: 600;
     position: sticky;
     top: 0;
-    /* Sticks the element to the exact top */
     z-index: 1000;
+}
+.mobile-nav {
+    position: sticky;
+    top: 0;
+    background-color: rgb(250,250,250,0.2);
+    margin-top: 1em;
+    width: 100%;
+    z-index: 1000;
+    cursor: pointer;
 }
 
 /* Container to fix the image position while scrolling */

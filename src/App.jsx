@@ -13,7 +13,7 @@ import './assets/shared-css/normalize.css'
 
 import NavBar from './components/NavBar'
 import FlyingV from './assets/IAmXCSB_flyingV.png'
-import { BrowserRouter, Routes, Route, useNavigate } from 'react-router-dom'
+import { HashRouter as Router, Routes, Route, useNavigate } from 'react-router-dom'
 import Events from './routes/Events'
 import Donate from './routes/Donate'
 import Home from './routes/Home'
@@ -27,7 +27,7 @@ import ProgrammersPage from './routes/ProgrammersPage'
 
 function App() {
   const [hlsInstance, setHlsInstance] = useState(null);
-  const [isPlayerCollapsed, setIsPlayerCollapsed] = useState(!hlsInstance)
+  const [isPlayerCollapsed, setIsPlayerCollapsed] = useState(false)
   const [parsedData, setParsedData] = useState([]);
 
   const STATION_ID = "XCSB";
@@ -146,7 +146,7 @@ function App() {
     <>
       {/* <Banner /> */}
       <div className="app-container">
-        <BrowserRouter>
+        <Router>
           <a href={import.meta.env.BASE_URL}>
             <img className="header-banner" src={FlyingV} alt="banner image XCSB" />
           </a>
@@ -154,37 +154,38 @@ function App() {
           <div className="routes-container">
             <Routes>
               <Route
-                path={`${import.meta.env.BASE_URL}`}
+                path={`/`}
                 element={<Main parsedData={parsedData} />}
               />
               <Route
-                path={`${import.meta.env.BASE_URL}about`}
+                path={`/about`}
                 element={<Home />}
               />
               <Route
-                path={`${import.meta.env.BASE_URL}xcsb-donate`}
+                path={`/xcsb-donate`}
                 element={<Donate />}
               />
               <Route
-                path={`${import.meta.env.BASE_URL}xcsb-mediaCoverage`}
+                path={`/xcsb-mediaCoverage`}
                 element={<MediaCoverage />}
               />
               <Route
-                path={`${import.meta.env.BASE_URL}xcsb-events`}
+                path={`/xcsb-events`}
                 element={<Events />}
               />
               <Route
-                path={`${import.meta.env.BASE_URL}xcsb-WCSB50Years`}
+                path={`/xcsb-WCSB50Years`}
                 element={<WCSB50Years />}
               />
               <Route
-                path={`${import.meta.env.BASE_URL}xcsb-programDetail`}
+                path={`/xcsb-programDetail`}
                 element={<Programs playArchive={playArchive} calculateRecentTimestamp={calculateRecentTimestamp} parsedData={parsedData} />}
               />
               <Route
-                path={`${import.meta.env.BASE_URL}xcsb-programmers`}
+                path={`/xcsb-programmers`}
                 element={<ProgrammersPage />}
               />
+              <Route path="*" element={<Main parsedData={parsedData} />} /> 
             </Routes>
           </div>
           <div className='player-bar' id="player-bar" style={isPlayerCollapsed ? { width: '1em' } : null}>
@@ -196,7 +197,7 @@ function App() {
               <audio id="main-audio" controls></audio>
             </div>
           </div>
-        </BrowserRouter>
+        </Router>
       </div>
       <Footer />
     </>
