@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import './home.css'
-import { Link } from 'react-router-dom'
+import { NavLink } from 'react-router-dom'
 import FundraisingBanner from '../../assets/xcsbFundraisingBanner_1020x680.jpg'
 import XcsbSchedule from '../../assets/XCSBSched_20260301_thumb.png'
 import XcsbPamphlet from '../../assets/fliers/XCSB-Pamphlet_pg1Thumbnail.png'
@@ -40,13 +40,13 @@ function Home(props) {
                         </div>
 
                         <div className="grid_6">
-                            <a href="xcsb-donate.html"><img src={FundraisingBanner} /></a>
+                            <NavLink to="/xcsb-donate"><img src={FundraisingBanner} /></NavLink>
 
                             <p>Of course this new effort is going require raising funds &ndash; for equipment, studio rental, broadcast rights licensing,
                                 coffee... And we missed our annual Radiothon, so we have some catching up to do, financially.
-                                &nbsp;<Link to="xcsb-donate">PLEASE DONATE!</Link> We are grateful for your support!</p>
+                                &nbsp;<NavLink to="/xcsb-donate">PLEASE DONATE!</NavLink> We are grateful for your support!</p>
 
-                            <h2><Link to="xcsb-donate" className="buttonlinkwide">DONATE to XCSB</Link></h2>
+                            <h2><NavLink to="/xcsb-donate" className="buttonlinkwide">DONATE to XCSB</NavLink></h2>
 
                         </div>
 
@@ -76,7 +76,7 @@ function Home(props) {
                                 <li><strong>TARGET TO BEGIN LIVE STREAMING FROM OUR STUDIO: MAY 10!!</strong> At that time, we will also expand our programming roster with additional veteran programmers, as well as new volunteers.</li>
                                 <li>May 16th will be 'CSBs 50th Anniversary - so we are highly motivated to be bringing you the tunes, to help celebrate our birthday!</li>
 
-                                <li>Our partners at <a href="https://readingroomcle.org" target="_blank">The Reading Room</a> is now accepting your <a href="xcsb-donate.html">tax-deductible contributions</a> as our fiscal sponsors, until we receive our own 501c3 designation (it takes a long time).</li>
+                                <li>Our partners at <a href="https://readingroomcle.org" target="_blank">The Reading Room</a> is now accepting your <NavLink to="/xcsb-donate">tax-deductible contributions</NavLink> as our fiscal sponsors, until we receive our own 501c3 designation (it takes a long time).</li>
                             </ul>
                             <p>Whew! And, with your help, there's still more to come</p>
 
@@ -94,9 +94,9 @@ function Home(props) {
                             <p>Now more than ever, we need YOU! Your continued support, your help, and... your money. To get back to serving our community with the programming you love, we need to rebuild everything - our organization, our studios our staff - from scratch. Which is gonna take some scratch:</p>
 
                             <h3>&#9654; Financial donations</h3>
-                            <p>We are currently seeking financial donations to help us reestablish ourselves. Studio space, production and streaming equipment, startup costs - it’a big initial hill to climb, but with your help we can do it! Please consider making a <a href="xcsb-donate.html">tax-deductible donation to XCSB</a>, via our fiscal partner The Reading Room. Online, Venmo, personal checks options available. THANK YOU THANK YOU for your support!!</p>
+                            <p>We are currently seeking financial donations to help us reestablish ourselves. Studio space, production and streaming equipment, startup costs - it’a big initial hill to climb, but with your help we can do it! Please consider making a <NavLink to="/xcsb-donate">tax-deductible donation to XCSB</NavLink>, via our fiscal partner The Reading Room. Online, Venmo, personal checks options available. THANK YOU THANK YOU for your support!!</p>
                             <p>
-                                <Link to="/xcsb-donate" className="buttonlinkwide"> &#9654; &nbsp;DONATE to XCSB&nbsp; &#9664;</Link>
+                                <NavLink to="/xcsb-donate" className="buttonlinkwide"> &#9654; &nbsp;DONATE to XCSB&nbsp; &#9664;</NavLink>
                             </p>
 
                             <h3>&#9654; In-kind donations </h3>
@@ -118,7 +118,7 @@ function Home(props) {
                         <div id="whatCanIDo" className="grid_4">
                             <h1 className="first-header">What else can you do?</h1>
 
-                            <p><Link to={import.meta.env.BASE_URL + 'xcsb-events'}>&#9654; EVENTS!</Link></p>
+                            <p><NavLink to={'/xcsb-events'}>&#9654; EVENTS!</NavLink></p>
 
                             <p>&#9654; KEEP LISTENING:</p>
                             <ul>

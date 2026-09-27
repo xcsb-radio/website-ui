@@ -1,6 +1,5 @@
 import { useState } from 'react'
 import './programmersPage.css'
-import { Link } from 'react-router-dom'
 import ExportSettings from '../../assets/audacityExportSettings.png'
 import XCSBWorldRev from '../../assets/xcsbWorldReversed_250.png'
 import DragAFile from '../../assets/dragAFile.png'
