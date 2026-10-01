@@ -11,7 +11,7 @@ function Main(props) {
   const currentDay = today.toLocaleDateString('en-US', { weekday: 'long' })
   const currentHour = today.getHours()
   const currentShow = props.parsedData.find(i => (i.DAY === currentDay && i.START_TIME === `${currentHour}:00`) || (i.DAY === currentDay && i.START_TIME === `${currentHour - 1}:00`) || (i.DAY === currentDay && i.START_TIME === `${currentHour - 2}:00`) || (i.DAY === currentDay && i.START_TIME === `${currentHour - 3}:00`))
-  const curentShow2 = () => {
+  const currentShow2 = () => {
     if (props.parsedData.find(i => (i.DAY === currentDay && i.START_TIME === `${currentHour}:00`))) {
       return props.parsedData.find(i => (i.DAY === currentDay && i.START_TIME === `${currentHour}:00`))
     } else if (props.parsedData.find(i => (i.DAY === currentDay && i.START_TIME === `${currentHour - 1}:00`))) {
@@ -27,8 +27,8 @@ function Main(props) {
           <h1 className="headline">Radio for the community,</h1>
           <h1 className="headline">by the community.</h1>
           <div className='now-playing-container special-elite-regular'>
-            <p className="now-playing-text"><span style={{fontWeight: 'bold', color: '#444444'}}>Now playing:</span> {currentShow?.SHOW_TITLE}</p>
-            <p className="now-playing-text">{currentShow ? currentShow['DJ NAME'] : null}</p>
+            <p className="now-playing-text"><span style={{fontWeight: 'bold', color: '#444444'}}>Now playing:</span> {currentShow2()?.SHOW_TITLE}</p>
+            <p className="now-playing-text">{currentShow2() ? currentShow2()['DJ NAME'] : null}</p>
             </div>
         </div>
         <div className="buttons-container">

@@ -6,7 +6,9 @@ const ShowRow = (props) => {
     const formattedTime = () => {
         if (props.startTime === '0:00') {
             return '12:00 AM'
-        } else if (props.startTime.split(':')[0] > 12) {
+        } else if (props.startTime === '12:00') {
+            return '12:00 PM'
+        }else if (props.startTime.split(':')[0] > 12) {
             return `${props.startTime.split(':')[0] - 12}:00 PM`
         } else {
             return props.startTime + ' AM'

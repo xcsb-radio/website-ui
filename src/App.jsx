@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react'
 import Hls from 'hls.js';
 import Papa from 'papaparse'
-import showCsvData from './assets/programs.csv'
+import showCsvData from './assets/files/programs/programs.csv'
 import reactLogo from './assets/react.svg'
 import viteLogo from './assets/vite.svg'
 import heroImg from './assets/hero.png'
@@ -35,7 +35,6 @@ function App() {
 
   useEffect(() => {
     if (!parsedData.length) {
-      console.log('parsing...')
       Papa.parse(showCsvData, {
         download: true,
         header: true,
