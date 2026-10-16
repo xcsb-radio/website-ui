@@ -40,7 +40,7 @@ function NavBar(props) {
         setIsOpen(false);
         navigate(link);
     }
-    return width && width > 900 ? (
+    return width && width > 990 ? (
         <nav className="navbar-container" role="navigation">
             <ul className="srt-menu-new">
                 <li className={window.location.pathname.includes('/about') ? "current" : 'nav-item'}
