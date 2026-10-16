@@ -29,7 +29,7 @@ import News from './routes/News';
 
 function App() {
   const [hlsInstance, setHlsInstance] = useState(null);
-  const [isPlayerCollapsed, setIsPlayerCollapsed] = useState(false)
+  const [isPlayerCollapsed, setIsPlayerCollapsed] = useState(true)
   const [parsedData, setParsedData] = useState([]);
   const [currentShowName, setCurrentShowName] = useState('No Show Selected')
 
@@ -127,6 +127,7 @@ function App() {
     // label.innerText = `NOW PLAYING: ${name} (Broadcast: ${day} @ ${time} EST)`;
     // bar.style.display = "block";
     setCurrentShowName(`NOW PLAYING: ${name} (Broadcast: ${day} @ ${time} EST)`)
+    setIsPlayerCollapsed(false)
 
     if (Hls.isSupported()) {
       const currentHls = hlsInstance
@@ -182,16 +183,16 @@ function App() {
               />
               <Route
                 path={`/xcsb-programDetail`}
-                element={<Programs 
-                  playArchive={playArchive} 
-                  calculateRecentTimestamp={calculateRecentTimestamp} 
+                element={<Programs
+                  playArchive={playArchive}
+                  calculateRecentTimestamp={calculateRecentTimestamp}
                   parsedData={parsedData} />}
               />
               <Route
                 path={`/xcsb-programmers`}
                 element={<ProgrammersPage />}
               />
-                            <Route
+              <Route
                 path={`/xcsb-news`}
                 element={<News />}
               />
