@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react'
 import './programs.css'
 import MasterRadio from "../../assets/channelMasterRadio_300t.png"
+import { NavLink } from 'react-router-dom'
 
 const ShowRow = (props) => {
     const formattedTime = () => {
@@ -17,7 +18,7 @@ const ShowRow = (props) => {
     return (
         (props.selectedDay === props.day) || (props.selectedDay === 'Show All') ? <tr>
             <td style={{ whiteSpace: 'nowrap' }}>{formattedTime()}</td>
-            <td>{props.showName}</td>
+            <td><NavLink to={`/xcsb-show/${props.showName.replace(/\s/g, "-")}`}>{props.showName}</NavLink></td>
             <td>{props.djName}</td>
             <td><span className="listenbutton" onClick={() => props.playArchive(props.showName, props.day, props.startTime)}>Listen</span></td>
         </tr> : null
