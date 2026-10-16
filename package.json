@@ -2,7 +2,7 @@
   "name": "website-ui",
   "homepage": "https://xcsb-radio.github.io/website-ui",
   "private": true,
-  "version": "1.2.5",
+  "version": "1.2.7",
   "type": "module",
   "scripts": {
     "dev": "vite",
@@ -14,6 +14,7 @@
   },
   "dependencies": {
     "@base-ui/react": "^1.7.0",
+    "axios": "^1.20.0",
     "gh-pages": "^6.3.0",
     "hls.js": "^1.6.17",
     "papaparse": "^5.7.0",
