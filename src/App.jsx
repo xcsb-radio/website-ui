@@ -23,6 +23,7 @@ import Footer from './components/Footer'
 import Programs from './routes/Programs'
 import Main from './routes/Main'
 import ProgrammersPage from './routes/ProgrammersPage'
+import News from './routes/News';
 // import Show from './routes/Show';
 // import Banner from './components/NavBar/Banner'
 
@@ -176,7 +177,7 @@ function App() {
                 element={<Events />}
               />
               <Route
-                path={`/xcsb-WCSB50Years`}
+                path={`/xcsb-WCSB49Years`}
                 element={<WCSB50Years />}
               />
               <Route
@@ -189,6 +190,10 @@ function App() {
               <Route
                 path={`/xcsb-programmers`}
                 element={<ProgrammersPage />}
+              />
+                            <Route
+                path={`/xcsb-news`}
+                element={<News />}
               />
               {/* <Route
                 path={`/xcsb-show/*`}
