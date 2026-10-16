@@ -6,6 +6,28 @@
   /* min-height: 30em; */
 }
 
+.main-container::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: url('../../assets/turntable.jpg');
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  opacity: 0.4;
+  z-index: -1;
+  /* this is hacky- is there a better way to make it long enough to fit everything? */
+  height: 100em;
+  width: 100%;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  will-change: transform; 
+  transform: translateZ(0);
+  display: block;
+}
+
 .main-lead {
   display: flex;
   flex-direction: row;
@@ -36,25 +58,9 @@
   height: 20em;
 }
 
-.main-container::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  /* Stretches the pseudo-element to fill the parent entirely */
-  background-image: url('../../assets/turntable.jpg');
-  background-attachment: fixed;
-  background-size: cover;
-  background-position: center;
-  opacity: 0.4;
-  /* Controls your background transparency (0.0 to 1.0) */
-  /* Pushes the image layer back behind the text */
-  z-index: -1;
-  /* this is hacky- is there a better way to make it long enough to fit everything? */
-  height: 100em;
-}
-
 .buttons-container {
   pointer-events: auto;
+  /* padding: 1em; */
 }
 
 .events-teaser {
@@ -92,16 +98,47 @@
   padding: 3em 2em 4em;
 }
 
+.listen-button {
+  background-color: #004E7C;
+  color: #ffffff;
+  padding: 10px;
+  border-radius: 7px;
+  width: 95%;
+}
+
+.listen-menu {
+  margin-top: -1em;
+  background-color: #f3f3f3;
+  padding: 0;
+  width: 95%;
+  border-radius: 7px;
+}
+
+.listening-list {
+  list-style-type: none;
+  width: 100%;
+  padding: 5px 0;
+}
 
 .now-playing-text {
   color: #591C0B;
   rotate: -9deg;
 }
 
+.arrow-more-main {
+  border: solid white;
+  border-radius: 5px;
+  border-width: 0 5px 5px 0;
+  display: inline-block;
+  padding: 5px;
+  margin: 5px 10px;
+  margin-top: 5px;
+}
+
 @media screen and (max-width: 1336px) {
   .buttons-container {
     margin-top: 3em;
-}
+  }
 }
 
 @media screen and (max-width: 990px) {
@@ -112,7 +149,7 @@
   }
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 900px) {
   .img-background {
     min-width: 100%;
   }
@@ -121,6 +158,7 @@
     font-size: 2.2em;
     margin-left: 1em;
   }
+
   .now-playing-container {
     max-width: 35em;
     padding: 4em;

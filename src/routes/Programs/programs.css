@@ -45,15 +45,14 @@
     color: #000000;
 }
 
-.player-bar {
+/* .player-bar {
     border-radius: 10px;
     padding: 20px;
     background-color: white;
     position: fixed;
     right: 1em;
-    /* display: block; */
     bottom: 3em;
-}
+} */
 
 .arrow-left {
     border: solid black;
