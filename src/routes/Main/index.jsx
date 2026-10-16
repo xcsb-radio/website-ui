@@ -2,12 +2,13 @@ import { useState } from 'react'
 import './main.css'
 import Turntable from '../../assets/turntable.jpg'
 import AppThumbnail from '../../assets/xcsbPhoneApp_200x381.png'
-import {eventsList} from '../../assets/files/events'
+import { eventsList } from '../../assets/files/events'
 import { NavLink } from 'react-router-dom'
 
 function Main(props) {
+  const [listenMenuOpen, setListenMenuOpen] = useState(false)
   const today = new Date()
-  const currentMonth = today.toLocaleString('default', {month: 'long'})
+  const currentMonth = today.toLocaleString('default', { month: 'long' })
   const currentDay = today.toLocaleDateString('en-US', { weekday: 'long' })
   const currentHour = today.getHours()
   const currentShow = props.parsedData.find(i => (i.DAY === currentDay && i.START_TIME === `${currentHour}:00`) || (i.DAY === currentDay && i.START_TIME === `${currentHour - 1}:00`) || (i.DAY === currentDay && i.START_TIME === `${currentHour - 2}:00`) || (i.DAY === currentDay && i.START_TIME === `${currentHour - 3}:00`))
@@ -27,16 +28,41 @@ function Main(props) {
           <h1 className="headline">Radio for the community,</h1>
           <h1 className="headline">by the community.</h1>
           <div className='now-playing-container special-elite-regular'>
-            <p className="now-playing-text"><span style={{fontWeight: 'bold', color: '#444444'}}>Now playing:</span> {currentShow2()?.SHOW_TITLE}</p>
+            <p className="now-playing-text"><span style={{ fontWeight: 'bold', color: '#444444' }}>Now playing:</span> {currentShow2()?.SHOW_TITLE}</p>
             <p className="now-playing-text">{currentShow2() ? currentShow2()['DJ NAME'] : null}</p>
-            </div>
+          </div>
         </div>
         <div className="buttons-container">
           <h1>
-            <a href="https://xcsb.live/public/xcsb-cleveland" target="_blank" className="buttonlinkwide">
+            <div className="buttonlinkwide listen-button" onClick={() => setListenMenuOpen(!listenMenuOpen)}>
               Listen Now!
-            </a>
+              {listenMenuOpen ? <i className="arrow-more-main down" /> : <i className="arrow-more-main right" />}
+            </div>
           </h1>
+          {listenMenuOpen ? (
+              <ul className='listen-menu'>
+                <li className='listening-list'>
+                  <a href="https://xcsb.live/public/xcsb-cleveland" target="_blank">
+                    Web
+                  </a>
+                </li>
+                <li className='listening-list'>
+                  <a href="https://xcsb.live/listen/xcsb-cleveland/xcsb.aac" target="_blank">
+                    New hi-fi
+                  </a>
+                </li>
+                <li className='listening-list'>
+                  <a href="https://xcsb.live/listen/xcsb-cleveland/xcsb160.mp3" target="_blank">
+                    Old hi-fi
+                  </a>
+                </li>
+                <li className='listening-list'>
+                  <a href="https://xcsb.live/listen/xcsb-cleveland/xcsb64.aac" target="_blank">
+                    Low-fi/limited bandwidth
+                  </a>
+                </li>
+              </ul>
+          ) : null}
           <h1>
             <a href="https://square.link/u/Eu7UreAU" className="buttonlinkwide" target="_blank">
               Donate
@@ -48,16 +74,16 @@ function Main(props) {
             </a>
           </h1>
           <div className='events-teaser'>
-            <NavLink to='/xcsb-events' style={{textDecoration: 'none'}}>
-            <h2 className='events-teaser-header'>Come see us in person at our next community event!</h2>
-            <div style={{display: 'flex', flexDirection: 'column'}}>
-              <h3 className='events-teaser-blurb'>{eventsList[currentMonth][0].eventName}</h3>
-              <p style={{margin: 0}} className='events-teaser-blurb'>{eventsList[currentMonth][0].date}</p>
-              {eventsList[currentMonth][0].image ? 
-              <img className='events-teaser-image' src={eventsList[currentMonth][0].image} /> : null}
-            </div>
-            <p className='events-teaser-blurb'>{eventsList[currentMonth][0].description}</p>
-            <p className='events-teaser-blurb'>More happenings...</p>
+            <NavLink to='/xcsb-events' style={{ textDecoration: 'none' }}>
+              <h2 className='events-teaser-header'>Come see us in person at our next community event!</h2>
+              <div style={{ display: 'flex', flexDirection: 'column' }}>
+                <h3 className='events-teaser-blurb'>{eventsList[currentMonth][0].eventName}</h3>
+                <p style={{ margin: 0 }} className='events-teaser-blurb'>{eventsList[currentMonth][0].date}</p>
+                {eventsList[currentMonth][0].image ?
+                  <img className='events-teaser-image' src={eventsList[currentMonth][0].image} /> : null}
+              </div>
+              <p className='events-teaser-blurb'>{eventsList[currentMonth][0].description}</p>
+              <p className='events-teaser-blurb'>More happenings...</p>
             </NavLink>
           </div>
         </div>

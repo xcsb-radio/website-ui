@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react'
 import Hls from 'hls.js';
 import Papa from 'papaparse'
-import showCsvData from './assets/files/programs/programs.csv'
+import showCsvData from './assets/files/programs/xcsb-programDetail.csv'
 import reactLogo from './assets/react.svg'
 import viteLogo from './assets/vite.svg'
 import heroImg from './assets/hero.png'
@@ -13,7 +13,7 @@ import './assets/shared-css/normalize.css'
 
 import NavBar from './components/NavBar'
 import FlyingV from './assets/IAmXCSB_flyingV.png'
-import { HashRouter as Router, Routes, Route, useNavigate } from 'react-router-dom'
+import { HashRouter as Router, Routes, Route, useNavigate, NavLink } from 'react-router-dom'
 import Events from './routes/Events'
 import Donate from './routes/Donate'
 import Home from './routes/Home'
@@ -23,12 +23,14 @@ import Footer from './components/Footer'
 import Programs from './routes/Programs'
 import Main from './routes/Main'
 import ProgrammersPage from './routes/ProgrammersPage'
+import Show from './routes/Show';
 // import Banner from './components/NavBar/Banner'
 
 function App() {
   const [hlsInstance, setHlsInstance] = useState(null);
   const [isPlayerCollapsed, setIsPlayerCollapsed] = useState(false)
   const [parsedData, setParsedData] = useState([]);
+  const [currentShowName, setCurrentShowName] = useState('No Show Selected')
 
   const STATION_ID = "XCSB";
   const STATION_TZ = "America/New_York";
@@ -121,8 +123,9 @@ function App() {
     const bar = document.getElementById("player-bar");
     const label = document.getElementById("now-playing-label");
 
-    label.innerText = `NOW PLAYING: ${name} (Broadcast: ${day} @ ${time} EST)`;
-    bar.style.display = "block";
+    // label.innerText = `NOW PLAYING: ${name} (Broadcast: ${day} @ ${time} EST)`;
+    // bar.style.display = "block";
+    setCurrentShowName(`NOW PLAYING: ${name} (Broadcast: ${day} @ ${time} EST)`)
 
     if (Hls.isSupported()) {
       const currentHls = hlsInstance
@@ -146,9 +149,9 @@ function App() {
       {/* <Banner /> */}
       <div className="app-container">
         <Router>
-          <a href={import.meta.env.BASE_URL}>
+          <NavLink to='/'>
             <img className="header-banner" src={FlyingV} alt="banner image XCSB" />
-          </a>
+          </NavLink>
           <NavBar />
           <div className="routes-container">
             <Routes>
@@ -178,21 +181,30 @@ function App() {
               />
               <Route
                 path={`/xcsb-programDetail`}
-                element={<Programs playArchive={playArchive} calculateRecentTimestamp={calculateRecentTimestamp} parsedData={parsedData} />}
+                element={<Programs 
+                  playArchive={playArchive} 
+                  calculateRecentTimestamp={calculateRecentTimestamp} 
+                  parsedData={parsedData} />}
               />
               <Route
                 path={`/xcsb-programmers`}
                 element={<ProgrammersPage />}
               />
-              <Route path="*" element={<Main parsedData={parsedData} />} /> 
+              <Route
+                path={`/xcsb-show/*`}
+                element={<Show parsedData={parsedData} />}
+              />
+              <Route path="*" element={<Main parsedData={parsedData} />} />
             </Routes>
           </div>
           <div className='player-bar' id="player-bar" style={isPlayerCollapsed ? { width: '1em' } : null}>
-            <div onClick={() => setIsPlayerCollapsed(!isPlayerCollapsed)}>
-              <div className={isPlayerCollapsed ? 'arrow-left' : 'arrow-right'} />
-            </div>
             <div className="player-inner">
-              <div id="now-playing-label">SELECT A SHOW</div>
+              <div style={{ display: 'flex', flexDirection: 'row' }}>
+                <div onClick={() => setIsPlayerCollapsed(!isPlayerCollapsed)}>
+                  <div className={isPlayerCollapsed ? 'arrow-left' : 'arrow-right'} />
+                </div>
+                <div id="now-playing-label">{isPlayerCollapsed ? '' : currentShowName}</div>
+              </div>
               <audio id="main-audio" controls></audio>
             </div>
           </div>
