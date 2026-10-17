@@ -120,280 +120,280 @@ function ProgrammersPage(props) {
                             <h2 id="ids">Pre-recorded IDs</h2>
                             <p>Just IDing the station in your announcing is fine. Or, you can use one of these fine prerecorded IDs (courtesy of Ryan unless otherwise attributed).</p>
                             <p>Click on the player to preview. To download, either click on the individual file name, or right-click and choose "save link as" (browser dependant).</p>
-                            <p><br />You can also <a href="programmers/Archive_PSAs-IDs_03042026.zip" download>download a single .zip file</a> of the entire set (updated 3/4/26). Programmers are encouraged to contribute new ones!</p>
+                            <p><br />You can also <a href="https://www.xcsb.org/programmers/Archive_PSAs-IDs_03042026.zip" download>download a single .zip file</a> of the entire set (updated 3/4/26). Programmers are encouraged to contribute new ones!</p>
 
                             <div className="audio-row">
-                                &#9654; <a href="programmers/FILENAME" download>DISPLAYNAME</a> (LENGTH sec.)&nbsp;
+                                &#9654; <a href="https://www.xcsb.org/programmers/FILENAME" download>DISPLAYNAME</a> (LENGTH sec.)&nbsp;
                                 <audio className="compact-player" controls preload="none">
-                                    <source src="programmers/FILENAME" type="audio/wav" />
-                                </audio>
-                            </div>
-
-                            <div className="audio-row">
-                                &#9654; <a href="programmers/prof_hama_Wittgenstein_ID.mp3" download>Prof. Wittgenstein ID</a> (Hama) (14 sec.)&nbsp;
-                                <audio className="compact-player" controls preload="none">
-                                    <source src="programmers/prof_hama_Wittgenstein_ID.mp3" type="audio/wav" />
-                                </audio>
-                            </div>
-                            <div className="audio-row">
-                                &#9654; <a href="programmers/straight_mp_ID.mp3" download>Straight MP ID</a> (Hama) (3 sec.)&nbsp;
-                                <audio className="compact-player" controls preload="none">
-                                    <source src="programmers/straight_mp_ID.mp3" type="audio/wav" />
-                                </audio>
-                            </div>
-                            <div className="audio-row">
-                                &#9654; <a href="programmers/crucify_1st_bozo_ID.mp3" download>Crucify 1st Bozo ID</a> (Hama) (50 sec.)&nbsp;
-                                <audio className="compact-player" controls preload="none">
-                                    <source src="programmers/crucify_1st_bozo_ID.mp3" type="audio/wav" />
-                                </audio>
-                            </div>
-                            <div className="audio-row">
-                                &#9654; <a href="programmers/groovy_baby_hama_ID.mp3" download>Groovy Baby ID</a> (Hama) (11 sec.)&nbsp;
-                                <audio className="compact-player" controls preload="none">
-                                    <source src="programmers/groovy_baby_hama_ID.mp3" type="audio/wav" />
-                                </audio>
-                            </div>
-                            <div className="audio-row">
-                                &#9654; <a href="programmers/UFO_Hama_ID.mp3" download>UFO ID</a> (Hama) (11 sec.)&nbsp;
-                                <audio className="compact-player" controls preload="none">
-                                    <source src="programmers/UFO_Hama_ID.mp3" type="audio/wav" />
-                                </audio>
-                            </div>
-                            <div className="audio-row">
-                                &#9654; <a href="programmers/cosmic_hama_ID.mp3" download>Cosmic ID</a> (Hama) (15 sec.)&nbsp;
-                                <audio className="compact-player" controls preload="none">
-                                    <source src="programmers/cosmic_hama_ID.mp3" type="audio/wav" />
-                                </audio>
-                            </div>
-                            <div className="audio-row">
-                                &#9654; <a href="programmers/BILL_HICKS_XCSB_ID.wav" download>Bill Hicks XCSB ID</a> (41 sec.)&nbsp;
-                                <audio className="compact-player" controls preload="none">
-                                    <source src="programmers/BILL_HICKS_XCSB_ID.wav" type="audio/wav" />
+                                    <source src="https://www.xcsb.org/programmers/FILENAME" type="audio/wav" />
                                 </audio>
                             </div>
 
                             <div className="audio-row">
-                                &#9654; <a href="programmers/RODNEY_CANT_CONTROL-ID_JohnT.mp3" download>Rodney Can't Contol Myself ID</a> (JT)(8 sec.)&nbsp;
+                                &#9654; <a href="https://www.xcsb.org/programmers/prof_hama_Wittgenstein_ID.mp3" download>Prof. Wittgenstein ID</a> (Hama) (14 sec.)&nbsp;
                                 <audio className="compact-player" controls preload="none">
-                                    <source src="programmers/RODNEY_CANT_CONTROL-ID_JohnT.mp3" type="audio/wav" />
+                                    <source src="https://www.xcsb.org/programmers/prof_hama_Wittgenstein_ID.mp3" type="audio/wav" />
                                 </audio>
                             </div>
                             <div className="audio-row">
-                                &#9654; <a href="programmers/BOLOGNA_XCSB-ID_JohnT.mp3" download>Won't Stand for Bologna ID</a> (JT) (12 sec.)&nbsp;
+                                &#9654; <a href="https://www.xcsb.org/programmers/straight_mp_ID.mp3" download>Straight MP ID</a> (Hama) (3 sec.)&nbsp;
                                 <audio className="compact-player" controls preload="none">
-                                    <source src="programmers/BOLOGNA_XCSB-ID_JohnT.mp3" type="audio/wav" />
-                                </audio>
-                            </div>
-
-                            <div className="audio-row">
-                                &#9654; <a href="programmers/FrankZappa-ItsOkID_chris.mp3" download>Frank Zappa-It's OK</a> (ChrisK) (1:22)&nbsp;
-                                <audio className="compact-player" controls preload="none">
-                                    <source src="programmers/FrankZappa-ItsOkID_chris.mp3" type="audio/wav" />
+                                    <source src="https://www.xcsb.org/programmers/straight_mp_ID.mp3" type="audio/wav" />
                                 </audio>
                             </div>
                             <div className="audio-row">
-                                &#9654; <a href="programmers/XCSB-JamesLastSmoothID.mp3" download>Jame's Last Smooth ID</a> (27 sec.)&nbsp;
+                                &#9654; <a href="https://www.xcsb.org/programmers/crucify_1st_bozo_ID.mp3" download>Crucify 1st Bozo ID</a> (Hama) (50 sec.)&nbsp;
                                 <audio className="compact-player" controls preload="none">
-                                    <source src="programmers/XCSB-JamesLastSmoothID.mp3" type="audio/mp3" />
+                                    <source src="https://www.xcsb.org/programmers/crucify_1st_bozo_ID.mp3" type="audio/wav" />
                                 </audio>
                             </div>
                             <div className="audio-row">
-                                &#9654; <a href="programmers/New_Ideas_XCSB_ID.mp3" download>New Ideas XCSB ID</a> (36 sec.)&nbsp;
+                                &#9654; <a href="https://www.xcsb.org/programmers/groovy_baby_hama_ID.mp3" download>Groovy Baby ID</a> (Hama) (11 sec.)&nbsp;
                                 <audio className="compact-player" controls preload="none">
-                                    <source src="programmers/New_Ideas_XCSB_ID.mp3" type="audio/mp3" />
+                                    <source src="https://www.xcsb.org/programmers/groovy_baby_hama_ID.mp3" type="audio/wav" />
                                 </audio>
                             </div>
                             <div className="audio-row">
-                                &#9654; <a href="programmers/College_Radio_Has_Finally_Graduated.mp3" download>College Radio Has Finally Graduated</a> (32 sec.)&nbsp;
+                                &#9654; <a href="https://www.xcsb.org/programmers/UFO_Hama_ID.mp3" download>UFO ID</a> (Hama) (11 sec.)&nbsp;
                                 <audio className="compact-player" controls preload="none">
-                                    <source src="programmers/College_Radio_Has_Finally_Graduated.mp3" type="audio/mp3" />
+                                    <source src="https://www.xcsb.org/programmers/UFO_Hama_ID.mp3" type="audio/wav" />
                                 </audio>
                             </div>
                             <div className="audio-row">
-                                &#9654; <a href="programmers/Inappropriate_XCSB_Disclaimer.wav" download>Inappropriate XCSB Disclaimer.wav</a> (27 sec.)&nbsp;
+                                &#9654; <a href="https://www.xcsb.org/programmers/cosmic_hama_ID.mp3" download>Cosmic ID</a> (Hama) (15 sec.)&nbsp;
                                 <audio className="compact-player" controls preload="none">
-                                    <source src="programmers/Inappropriate_XCSB_Disclaimer.wav" type="audio/wav" />
+                                    <source src="https://www.xcsb.org/programmers/cosmic_hama_ID.mp3" type="audio/wav" />
                                 </audio>
                             </div>
                             <div className="audio-row">
-                                &#9654; <a href="programmers/XCSB-DecadesOfGuitarRiffsID.mp3" download>XCSB-Decades Of Guitar Riffs ID</a> (Stanislav) (23 sec.)&nbsp;
+                                &#9654; <a href="https://www.xcsb.org/programmers/BILL_HICKS_XCSB_ID.wav" download>Bill Hicks XCSB ID</a> (41 sec.)&nbsp;
                                 <audio className="compact-player" controls preload="none">
-                                    <source src="programmers/XCSB-DecadesOfGuitarRiffsID.mp3" type="audio/mp3" />
-                                </audio>
-                            </div>
-                            <div className="audio-row">
-                                &#9654; <a href="programmers/What_did_you_bring_me.mp3" download>What did you bring me?</a> (20 sec.)&nbsp;
-                                <audio className="compact-player" controls preload="none">
-                                    <source src="programmers/What_did_you_bring_me.mp3" type="audio/mp3" />
-                                </audio>
-                            </div>
-                            <div className="audio-row">
-                                &#9654; <a href="programmers/Burn_Witch_Burn.mp3" download>Burn Witch Burn</a> (48 sec.)&nbsp;
-                                <audio className="compact-player" controls preload="none">
-                                    <source src="programmers/Burn_Witch_Burn.mp3" type="audio/mp3" />
-                                </audio>
-                            </div>
-                            <div className="audio-row">
-                                &#9654; <a href="programmers/XCSB-ShortBreak.mp3" download>XCSB-Short Break</a> (Stanislav) (9 sec.)&nbsp;
-                                <audio className="compact-player" controls preload="none">
-                                    <source src="programmers/XCSB-ShortBreak.mp3" type="audio/mp3" />
-                                </audio>
-                            </div>
-                            <div className="audio-row">
-                                &#9654; <a href="programmers/Stranger_Things_XCSB_ID.wav" download>Stranger Things XCSB ID</a> (35 sec.)&nbsp;
-                                <audio className="compact-player" controls preload="none">
-                                    <source src="programmers/Stranger_Things_XCSB_ID.wav" type="audio/wav" />
-                                </audio>
-                            </div>
-                            <div className="audio-row">
-                                &#9654; <a href="programmers/This_Station_Rules_the_Nation.wav" download>This Station Rules the Nation</a> (TommyFox) (11 sec.)&nbsp;
-                                <audio className="compact-player" controls preload="none">
-                                    <source src="programmers/This_Station_Rules_the_Nation.wav" type="audio/wav" />
-                                </audio>
-                            </div>
-                            <div className="audio-row">
-                                &#9654; <a href="programmers/XCSB_dr_laura_ID.wav" download>Dr Laura ID</a> (19 sec.)&nbsp;
-                                <audio className="compact-player" controls preload="none">
-                                    <source src="programmers/XCSB_dr_laura_ID.wav" type="audio/wav" />
-                                </audio>
-                            </div>
-                            <div className="audio-row">
-                                &#9654; <a href="programmers/2001_xcsb_id.wav" download>2001 XCSB ID</a> (24 sec.)&nbsp;
-                                <audio className="compact-player" controls preload="none">
-                                    <source src="programmers/2001_xcsb_id.wav" type="audio/wav" />
-                                </audio>
-                            </div>
-                            <div className="audio-row">
-                                &#9654; <a href="programmers/Airheads_XCSB_ID.wav" download>Airheads XCSB ID</a> (17 sec.)&nbsp;
-                                <audio className="compact-player" controls preload="none">
-                                    <source src="programmers/Airheads_XCSB_ID.wav" type="audio/wav" />
-                                </audio>
-                            </div>
-                            <div className="audio-row">
-                                &#9654; <a href="programmers/i_made_this_ecording_XCSB_ID.mp3" download>I made this ecording XCSB ID</a> (13 sec.)&nbsp;
-                                <audio className="compact-player" controls preload="none">
-                                    <source src="programmers/i_made_this_ecording_XCSB_ID.mp3" type="audio/mp3" />
+                                    <source src="https://www.xcsb.org/programmers/BILL_HICKS_XCSB_ID.wav" type="audio/wav" />
                                 </audio>
                             </div>
 
                             <div className="audio-row">
-                                &#9654; <a href="programmers/if_you_strike_me_down_XCSB_ID.wav" download>If you strike me down XCSB ID</a> (11 sec.)&nbsp;
+                                &#9654; <a href="https://www.xcsb.org/programmers/RODNEY_CANT_CONTROL-ID_JohnT.mp3" download>Rodney Can't Contol Myself ID</a> (JT)(8 sec.)&nbsp;
                                 <audio className="compact-player" controls preload="none">
-                                    <source src="programmers/if_you_strike_me_down_XCSB_ID.wav" type="audio/wav" />
+                                    <source src="https://www.xcsb.org/programmers/RODNEY_CANT_CONTROL-ID_JohnT.mp3" type="audio/wav" />
                                 </audio>
                             </div>
                             <div className="audio-row">
-                                &#9654; <a href="programmers/ROUGH_JAZZ_XCSB_ID.wav" download>Rough Jazz XCSB ID</a> (28 sec.)&nbsp;
+                                &#9654; <a href="https://www.xcsb.org/programmers/BOLOGNA_XCSB-ID_JohnT.mp3" download>Won't Stand for Bologna ID</a> (JT) (12 sec.)&nbsp;
                                 <audio className="compact-player" controls preload="none">
-                                    <source src="programmers/ROUGH_JAZZ_XCSB_ID.wav" type="audio/wav" />
+                                    <source src="https://www.xcsb.org/programmers/BOLOGNA_XCSB-ID_JohnT.mp3" type="audio/wav" />
+                                </audio>
+                            </div>
+
+                            <div className="audio-row">
+                                &#9654; <a href="https://www.xcsb.org/programmers/FrankZappa-ItsOkID_chris.mp3" download>Frank Zappa-It's OK</a> (ChrisK) (1:22)&nbsp;
+                                <audio className="compact-player" controls preload="none">
+                                    <source src="https://www.xcsb.org/programmers/FrankZappa-ItsOkID_chris.mp3" type="audio/wav" />
                                 </audio>
                             </div>
                             <div className="audio-row">
-                                &#9654; <a href="programmers/XCSB_Biden_ID.wav" download>Biden ID</a> (6 sec.)&nbsp;
+                                &#9654; <a href="https://www.xcsb.org/programmers/XCSB-JamesLastSmoothID.mp3" download>Jame's Last Smooth ID</a> (27 sec.)&nbsp;
                                 <audio className="compact-player" controls preload="none">
-                                    <source src="programmers/XCSB_Biden_ID.wav" type="audio/wav" />
+                                    <source src="https://www.xcsb.org/programmers/XCSB-JamesLastSmoothID.mp3" type="audio/mp3" />
                                 </audio>
                             </div>
                             <div className="audio-row">
-                                &#9654; <a href="programmers/XCSB_Bird_Jazz_ID.wav" download>Bird Jazz XCSB ID.wav</a> (26 sec.)&nbsp;
+                                &#9654; <a href="https://www.xcsb.org/programmers/New_Ideas_XCSB_ID.mp3" download>New Ideas XCSB ID</a> (36 sec.)&nbsp;
                                 <audio className="compact-player" controls preload="none">
-                                    <source src="programmers/XCSB_Bird_Jazz_ID.wav" type="audio/wav" />
+                                    <source src="https://www.xcsb.org/programmers/New_Ideas_XCSB_ID.mp3" type="audio/mp3" />
                                 </audio>
                             </div>
                             <div className="audio-row">
-                                &#9654; <a href="programmers/XCSB_CSU_Engagement_ID.wav" download>XCSB CSU Engagement ID</a> (18 sec.)&nbsp;
+                                &#9654; <a href="https://www.xcsb.org/programmers/College_Radio_Has_Finally_Graduated.mp3" download>College Radio Has Finally Graduated</a> (32 sec.)&nbsp;
                                 <audio className="compact-player" controls preload="none">
-                                    <source src="programmers/XCSB_CSU_Engagement_ID.wav" type="audio/wav" />
+                                    <source src="https://www.xcsb.org/programmers/College_Radio_Has_Finally_Graduated.mp3" type="audio/mp3" />
                                 </audio>
                             </div>
                             <div className="audio-row">
-                                &#9654; <a href="programmers/XCSB_Honoring_WCSB_ID.wav" download>XCSB Honoring WCSB ID</a> (41 sec.)&nbsp;
+                                &#9654; <a href="https://www.xcsb.org/programmers/Inappropriate_XCSB_Disclaimer.wav" download>Inappropriate XCSB Disclaimer.wav</a> (27 sec.)&nbsp;
                                 <audio className="compact-player" controls preload="none">
-                                    <source src="programmers/XCSB_Honoring_WCSB_ID.wav" type="audio/wav" />
+                                    <source src="https://www.xcsb.org/programmers/Inappropriate_XCSB_Disclaimer.wav" type="audio/wav" />
                                 </audio>
                             </div>
                             <div className="audio-row">
-                                &#9654; <a href="programmers/XCSB_Obama_ID.wav" download>Obama XCSB ID</a> (5 sec.)&nbsp;
+                                &#9654; <a href="https://www.xcsb.org/programmers/XCSB-DecadesOfGuitarRiffsID.mp3" download>XCSB-Decades Of Guitar Riffs ID</a> (Stanislav) (23 sec.)&nbsp;
                                 <audio className="compact-player" controls preload="none">
-                                    <source src="programmers/XCSB_Obama_ID.wav" type="audio/wav" />
+                                    <source src="https://www.xcsb.org/programmers/XCSB-DecadesOfGuitarRiffsID.mp3" type="audio/mp3" />
                                 </audio>
                             </div>
                             <div className="audio-row">
-                                &#9654; <a href="programmers/XCSB_rebel_radio_ID.wav" download>Rebel Radio XCSB ID</a> (11 sec.)&nbsp;
+                                &#9654; <a href="https://www.xcsb.org/programmers/What_did_you_bring_me.mp3" download>What did you bring me?</a> (20 sec.)&nbsp;
                                 <audio className="compact-player" controls preload="none">
-                                    <source src="programmers/XCSB_rebel_radio_ID.wav" type="audio/wav" />
+                                    <source src="https://www.xcsb.org/programmers/What_did_you_bring_me.mp3" type="audio/mp3" />
                                 </audio>
                             </div>
                             <div className="audio-row">
-                                &#9654; <a href="programmers/XCSB_Secret_Meetings_ID.wav" download>Secret Meetings XCSB ID</a> (40 sec.)&nbsp;
+                                &#9654; <a href="https://www.xcsb.org/programmers/Burn_Witch_Burn.mp3" download>Burn Witch Burn</a> (48 sec.)&nbsp;
                                 <audio className="compact-player" controls preload="none">
-                                    <source src="programmers/XCSB_Secret_Meetings_ID.wav" type="audio/wav" />
+                                    <source src="https://www.xcsb.org/programmers/Burn_Witch_Burn.mp3" type="audio/mp3" />
                                 </audio>
                             </div>
                             <div className="audio-row">
-                                &#9654; <a href="programmers/xcsb_sue_ya_ID.wav" download>Sue Ya XCSB ID</a> (28 sec.)&nbsp;
+                                &#9654; <a href="https://www.xcsb.org/programmers/XCSB-ShortBreak.mp3" download>XCSB-Short Break</a> (Stanislav) (9 sec.)&nbsp;
                                 <audio className="compact-player" controls preload="none">
-                                    <source src="programmers/xcsb_sue_ya_ID.wav" type="audio/wav" />
+                                    <source src="https://www.xcsb.org/programmers/XCSB-ShortBreak.mp3" type="audio/mp3" />
                                 </audio>
                             </div>
                             <div className="audio-row">
-                                &#9654; <a href="programmers/XCSB_Synth_D.wav" download> Synth D XCSB ID</a> (20 sec.)&nbsp;
+                                &#9654; <a href="https://www.xcsb.org/programmers/Stranger_Things_XCSB_ID.wav" download>Stranger Things XCSB ID</a> (35 sec.)&nbsp;
                                 <audio className="compact-player" controls preload="none">
-                                    <source src="programmers/XCSB_Synth_D.wav" type="audio/wav" />
+                                    <source src="https://www.xcsb.org/programmers/Stranger_Things_XCSB_ID.wav" type="audio/wav" />
                                 </audio>
                             </div>
                             <div className="audio-row">
-                                &#9654; <a href="programmers/XCSB_THX_ID.wav" download>THX XCSB ID</a> (19 sec.)&nbsp;
+                                &#9654; <a href="https://www.xcsb.org/programmers/This_Station_Rules_the_Nation.wav" download>This Station Rules the Nation</a> (TommyFox) (11 sec.)&nbsp;
                                 <audio className="compact-player" controls preload="none">
-                                    <source src="programmers/XCSB_THX_ID.wav" type="audio/wav" />
+                                    <source src="https://www.xcsb.org/programmers/This_Station_Rules_the_Nation.wav" type="audio/wav" />
                                 </audio>
                             </div>
                             <div className="audio-row">
-                                &#9654; <a href="programmers/XCSB_Trump_ID.wav" download>Trump XCSB ID</a> (9 sec.)&nbsp;
+                                &#9654; <a href="https://www.xcsb.org/programmers/XCSB_dr_laura_ID.wav" download>Dr Laura ID</a> (19 sec.)&nbsp;
                                 <audio className="compact-player" controls preload="none">
-                                    <source src="programmers/XCSB_Trump_ID.wav" type="audio/wav" />
+                                    <source src="https://www.xcsb.org/programmers/XCSB_dr_laura_ID.wav" type="audio/wav" />
                                 </audio>
                             </div>
                             <div className="audio-row">
-                                &#9654; <a href="programmers/XCSB_Suddenly_Last_Summer_ID.wav" download>Suddenly Last Summer XCSB ID</a> (by Steve) (34 sec.)&nbsp;
+                                &#9654; <a href="https://www.xcsb.org/programmers/2001_xcsb_id.wav" download>2001 XCSB ID</a> (24 sec.)&nbsp;
                                 <audio className="compact-player" controls preload="none">
-                                    <source src="programmers/XCSB_Suddenly_Last_Summer_ID.wav" type="audio/wav" />
+                                    <source src="https://www.xcsb.org/programmers/2001_xcsb_id.wav" type="audio/wav" />
                                 </audio>
                             </div>
                             <div className="audio-row">
-                                &#9654; <a href="programmers/Children_of_the_Damned_ID.wav" download>Children of the Damned XCSB ID </a>(by Steve) (13 sec.)&nbsp;
+                                &#9654; <a href="https://www.xcsb.org/programmers/Airheads_XCSB_ID.wav" download>Airheads XCSB ID</a> (17 sec.)&nbsp;
                                 <audio className="compact-player" controls preload="none">
-                                    <source src="programmers/Children_of_the_Damned_ID.wav" type="audio/wav" />
+                                    <source src="https://www.xcsb.org/programmers/Airheads_XCSB_ID.wav" type="audio/wav" />
                                 </audio>
                             </div>
                             <div className="audio-row">
-                                &#9654; <a href="programmers/Stranger_Things_XCSB ID.wav" download>Ben Shapiro XCSB ID</a> (34 sec.)&nbsp;
+                                &#9654; <a href="https://www.xcsb.org/programmers/i_made_this_ecording_XCSB_ID.mp3" download>I made this ecording XCSB ID</a> (13 sec.)&nbsp;
                                 <audio className="compact-player" controls preload="none">
-                                    <source src="programmers/Stranger_Things_XCSB_ID.wav" type="audio/wav" />
+                                    <source src="https://www.xcsb.org/programmers/i_made_this_ecording_XCSB_ID.mp3" type="audio/mp3" />
+                                </audio>
+                            </div>
+
+                            <div className="audio-row">
+                                &#9654; <a href="https://www.xcsb.org/programmers/if_you_strike_me_down_XCSB_ID.wav" download>If you strike me down XCSB ID</a> (11 sec.)&nbsp;
+                                <audio className="compact-player" controls preload="none">
+                                    <source src="https://www.xcsb.org/programmers/if_you_strike_me_down_XCSB_ID.wav" type="audio/wav" />
                                 </audio>
                             </div>
                             <div className="audio-row">
-                                &#9654; <a href="programmers/XSCB_The_Return_ID_by_Ennio.wav" download>XSCB: The Return XCSB ID </a> (by Ennio) (25 sec.)&nbsp;
+                                &#9654; <a href="https://www.xcsb.org/programmers/ROUGH_JAZZ_XCSB_ID.wav" download>Rough Jazz XCSB ID</a> (28 sec.)&nbsp;
                                 <audio className="compact-player" controls preload="none">
-                                    <source src="programmers/XSCB_The_Return_ID_by_Ennio.wav" type="audio/wav" />
+                                    <source src="https://www.xcsb.org/programmers/ROUGH_JAZZ_XCSB_ID.wav" type="audio/wav" />
                                 </audio>
                             </div>
                             <div className="audio-row">
-                                &#9654; <a href="programmers/Bulwinkle_rabbitOutOfHat_ID02.wav" download>Bulwinkle/Rabbit Out Of My Hat XCSB ID</a> (bbob) (15 sec.)&nbsp;
+                                &#9654; <a href="https://www.xcsb.org/programmers/XCSB_Biden_ID.wav" download>Biden ID</a> (6 sec.)&nbsp;
                                 <audio className="compact-player" controls preload="none">
-                                    <source src="programmers/Bulwinkle_rabbitOutOfHat_ID02.wav" type="audio/wav" />
+                                    <source src="https://www.xcsb.org/programmers/XCSB_Biden_ID.wav" type="audio/wav" />
                                 </audio>
                             </div>
                             <div className="audio-row">
-                                &#9654; <a href="programmers/Archive_Rerun_Disclaimer.wav" download>Archive - rerun disclaimer.wav</a> (31 sec.)&nbsp;
+                                &#9654; <a href="https://www.xcsb.org/programmers/XCSB_Bird_Jazz_ID.wav" download>Bird Jazz XCSB ID.wav</a> (26 sec.)&nbsp;
                                 <audio className="compact-player" controls preload="none">
-                                    <source src="programmers/Archive_Rerun_Disclaimer.wav" type="audio/wav" />
+                                    <source src="https://www.xcsb.org/programmers/XCSB_Bird_Jazz_ID.wav" type="audio/wav" />
                                 </audio>
                             </div>
                             <div className="audio-row">
-                                &#9654; <a href="programmers/One_Week_to_the_Future_RERUN_disclaimer.wav" download>One Week to the Future - rerun disclaimer</a> (28 sec.)&nbsp;
+                                &#9654; <a href="https://www.xcsb.org/programmers/XCSB_CSU_Engagement_ID.wav" download>XCSB CSU Engagement ID</a> (18 sec.)&nbsp;
                                 <audio className="compact-player" controls preload="none">
-                                    <source src="programmers/One_Week_to_the_Future_RERUN_disclaimer.wav" type="audio/wav" />
+                                    <source src="https://www.xcsb.org/programmers/XCSB_CSU_Engagement_ID.wav" type="audio/wav" />
+                                </audio>
+                            </div>
+                            <div className="audio-row">
+                                &#9654; <a href="https://www.xcsb.org/programmers/XCSB_Honoring_WCSB_ID.wav" download>XCSB Honoring WCSB ID</a> (41 sec.)&nbsp;
+                                <audio className="compact-player" controls preload="none">
+                                    <source src="https://www.xcsb.org/programmers/XCSB_Honoring_WCSB_ID.wav" type="audio/wav" />
+                                </audio>
+                            </div>
+                            <div className="audio-row">
+                                &#9654; <a href="https://www.xcsb.org/programmers/XCSB_Obama_ID.wav" download>Obama XCSB ID</a> (5 sec.)&nbsp;
+                                <audio className="compact-player" controls preload="none">
+                                    <source src="https://www.xcsb.org/programmers/XCSB_Obama_ID.wav" type="audio/wav" />
+                                </audio>
+                            </div>
+                            <div className="audio-row">
+                                &#9654; <a href="https://www.xcsb.org/programmers/XCSB_rebel_radio_ID.wav" download>Rebel Radio XCSB ID</a> (11 sec.)&nbsp;
+                                <audio className="compact-player" controls preload="none">
+                                    <source src="https://www.xcsb.org/programmers/XCSB_rebel_radio_ID.wav" type="audio/wav" />
+                                </audio>
+                            </div>
+                            <div className="audio-row">
+                                &#9654; <a href="https://www.xcsb.org/programmers/XCSB_Secret_Meetings_ID.wav" download>Secret Meetings XCSB ID</a> (40 sec.)&nbsp;
+                                <audio className="compact-player" controls preload="none">
+                                    <source src="https://www.xcsb.org/programmers/XCSB_Secret_Meetings_ID.wav" type="audio/wav" />
+                                </audio>
+                            </div>
+                            <div className="audio-row">
+                                &#9654; <a href="https://www.xcsb.org/programmers/xcsb_sue_ya_ID.wav" download>Sue Ya XCSB ID</a> (28 sec.)&nbsp;
+                                <audio className="compact-player" controls preload="none">
+                                    <source src="https://www.xcsb.org/programmers/xcsb_sue_ya_ID.wav" type="audio/wav" />
+                                </audio>
+                            </div>
+                            <div className="audio-row">
+                                &#9654; <a href="https://www.xcsb.org/programmers/XCSB_Synth_D.wav" download> Synth D XCSB ID</a> (20 sec.)&nbsp;
+                                <audio className="compact-player" controls preload="none">
+                                    <source src="https://www.xcsb.org/programmers/XCSB_Synth_D.wav" type="audio/wav" />
+                                </audio>
+                            </div>
+                            <div className="audio-row">
+                                &#9654; <a href="https://www.xcsb.org/programmers/XCSB_THX_ID.wav" download>THX XCSB ID</a> (19 sec.)&nbsp;
+                                <audio className="compact-player" controls preload="none">
+                                    <source src="https://www.xcsb.org/programmers/XCSB_THX_ID.wav" type="audio/wav" />
+                                </audio>
+                            </div>
+                            <div className="audio-row">
+                                &#9654; <a href="https://www.xcsb.org/programmers/XCSB_Trump_ID.wav" download>Trump XCSB ID</a> (9 sec.)&nbsp;
+                                <audio className="compact-player" controls preload="none">
+                                    <source src="https://www.xcsb.org/programmers/XCSB_Trump_ID.wav" type="audio/wav" />
+                                </audio>
+                            </div>
+                            <div className="audio-row">
+                                &#9654; <a href="https://www.xcsb.org/programmers/XCSB_Suddenly_Last_Summer_ID.wav" download>Suddenly Last Summer XCSB ID</a> (by Steve) (34 sec.)&nbsp;
+                                <audio className="compact-player" controls preload="none">
+                                    <source src="https://www.xcsb.org/programmers/XCSB_Suddenly_Last_Summer_ID.wav" type="audio/wav" />
+                                </audio>
+                            </div>
+                            <div className="audio-row">
+                                &#9654; <a href="https://www.xcsb.org/programmers/Children_of_the_Damned_ID.wav" download>Children of the Damned XCSB ID </a>(by Steve) (13 sec.)&nbsp;
+                                <audio className="compact-player" controls preload="none">
+                                    <source src="https://www.xcsb.org/programmers/Children_of_the_Damned_ID.wav" type="audio/wav" />
+                                </audio>
+                            </div>
+                            <div className="audio-row">
+                                &#9654; <a href="https://www.xcsb.org/programmers/Stranger_Things_XCSB ID.wav" download>Ben Shapiro XCSB ID</a> (34 sec.)&nbsp;
+                                <audio className="compact-player" controls preload="none">
+                                    <source src="https://www.xcsb.org/programmers/Stranger_Things_XCSB_ID.wav" type="audio/wav" />
+                                </audio>
+                            </div>
+                            <div className="audio-row">
+                                &#9654; <a href="https://www.xcsb.org/programmers/XSCB_The_Return_ID_by_Ennio.wav" download>XSCB: The Return XCSB ID </a> (by Ennio) (25 sec.)&nbsp;
+                                <audio className="compact-player" controls preload="none">
+                                    <source src="https://www.xcsb.org/programmers/XSCB_The_Return_ID_by_Ennio.wav" type="audio/wav" />
+                                </audio>
+                            </div>
+                            <div className="audio-row">
+                                &#9654; <a href="https://www.xcsb.org/programmers/Bulwinkle_rabbitOutOfHat_ID02.wav" download>Bulwinkle/Rabbit Out Of My Hat XCSB ID</a> (bbob) (15 sec.)&nbsp;
+                                <audio className="compact-player" controls preload="none">
+                                    <source src="https://www.xcsb.org/programmers/Bulwinkle_rabbitOutOfHat_ID02.wav" type="audio/wav" />
+                                </audio>
+                            </div>
+                            <div className="audio-row">
+                                &#9654; <a href="https://www.xcsb.org/programmers/Archive_Rerun_Disclaimer.wav" download>Archive - rerun disclaimer.wav</a> (31 sec.)&nbsp;
+                                <audio className="compact-player" controls preload="none">
+                                    <source src="https://www.xcsb.org/programmers/Archive_Rerun_Disclaimer.wav" type="audio/wav" />
+                                </audio>
+                            </div>
+                            <div className="audio-row">
+                                &#9654; <a href="https://www.xcsb.org/programmers/One_Week_to_the_Future_RERUN_disclaimer.wav" download>One Week to the Future - rerun disclaimer</a> (28 sec.)&nbsp;
+                                <audio className="compact-player" controls preload="none">
+                                    <source src="https://www.xcsb.org/programmers/One_Week_to_the_Future_RERUN_disclaimer.wav" type="audio/wav" />
                                 </audio>
                             </div>
 
@@ -407,71 +407,71 @@ function ProgrammersPage(props) {
                             <h2 id="psas">PSAs</h2>
                             <p>Whaddaya waiting for? Make one already!</p>
                             <div className="audio-row">
-                                &#9654; <a href="programmers/FILENAME" download>DISPLAYNAME</a> (LENGHTH sec.)&nbsp;
+                                &#9654; <a href="https://www.xcsb.org/programmers/FILENAME" download>DISPLAYNAME</a> (LENGHTH sec.)&nbsp;
                                 <audio className="compact-player" controls preload="none">
-                                    <source src="programmers/XFILENAME" type="audio/wav" />
+                                    <source src="https://www.xcsb.org/programmers/XFILENAME" type="audio/wav" />
                                 </audio>
                             </div>
 
                             <div className="audio-row">
-                                &#9654; <a href="programmers/Hearing_Loss_ENT_Power_Electronics_PSA.mp3" download>Hearing Loss ENT Power Electronics PSA</a> (92 sec.)&nbsp;
+                                &#9654; <a href="https://www.xcsb.org/programmers/Hearing_Loss_ENT_Power_Electronics_PSA.mp3" download>Hearing Loss ENT Power Electronics PSA</a> (92 sec.)&nbsp;
                                 <audio className="compact-player" controls preload="none">
-                                    <source src="programmers/Hearing_Loss_ENT_Power_Electronics_PSA.mp3" type="audio/mp3" />
+                                    <source src="https://www.xcsb.org/programmers/Hearing_Loss_ENT_Power_Electronics_PSA.mp3" type="audio/mp3" />
                                 </audio>
                             </div>
                             <div className="audio-row">
-                                &#9654; <a href="programmers/Energy_hogs_PSA.mp3" download>Energy hogs PSA</a> (66 sec.)&nbsp;
+                                &#9654; <a href="https://www.xcsb.org/programmers/Energy_hogs_PSA.mp3" download>Energy hogs PSA</a> (66 sec.)&nbsp;
                                 <audio className="compact-player" controls preload="none">
-                                    <source src="programmers/Energy_hogs_PSA.mp3" type="audio/mp3" />
+                                    <source src="https://www.xcsb.org/programmers/Energy_hogs_PSA.mp3" type="audio/mp3" />
                                 </audio>
                             </div>
                             <div className="audio-row">
-                                &#9654; <a href="programmers/Bullying_PSA.mp3" download>Bullying PSA</a> (43 sec.)&nbsp;
+                                &#9654; <a href="https://www.xcsb.org/programmers/Bullying_PSA.mp3" download>Bullying PSA</a> (43 sec.)&nbsp;
                                 <audio className="compact-player" controls preload="none">
-                                    <source src="programmers/Bullying_PSA.mp3" type="audio/mp3" />
+                                    <source src="https://www.xcsb.org/programmers/Bullying_PSA.mp3" type="audio/mp3" />
                                 </audio>
                             </div>
                             <div className="audio-row">
-                                &#9654; <a href="programmers/Fuzzy_bunny_PSA_EXTRA_FUZZY.mp3" download>Fuzzy bunny PSA EXTRA FUZZY</a> (60 sec.)&nbsp;
+                                &#9654; <a href="https://www.xcsb.org/programmers/Fuzzy_bunny_PSA_EXTRA_FUZZY.mp3" download>Fuzzy bunny PSA EXTRA FUZZY</a> (60 sec.)&nbsp;
                                 <audio className="compact-player" controls preload="none">
-                                    <source src="programmers/Fuzzy_bunny_PSA_EXTRA_FUZZY.mp3" type="audio/mp3" />
+                                    <source src="https://www.xcsb.org/programmers/Fuzzy_bunny_PSA_EXTRA_FUZZY.mp3" type="audio/mp3" />
                                 </audio>
                             </div>
                             <div className="audio-row">
-                                &#9654; <a href="programmers/Child_safety_seats_PSA.mp3" download>Child safety seats PSA</a> (64 sec.)&nbsp;
+                                &#9654; <a href="https://www.xcsb.org/programmers/Child_safety_seats_PSA.mp3" download>Child safety seats PSA</a> (64 sec.)&nbsp;
                                 <audio className="compact-player" controls preload="none">
-                                    <source src="programmers/Child_safety_seats_PSA.mp3" type="audio/mp3" />
+                                    <source src="https://www.xcsb.org/programmers/Child_safety_seats_PSA.mp3" type="audio/mp3" />
                                 </audio>
                             </div>
                             <div className="audio-row">
-                                &#9654; <a href="programmers/PETA_PSA_The_Donnas_and_Thursday_Club.mp3" download>PETA PSA The Donnas and Thursday Club</a> (66 sec.)&nbsp;
+                                &#9654; <a href="https://www.xcsb.org/programmers/PETA_PSA_The_Donnas_and_Thursday_Club.mp3" download>PETA PSA The Donnas and Thursday Club</a> (66 sec.)&nbsp;
                                 <audio className="compact-player" controls preload="none">
-                                    <source src="programmers/PETA_PSA_The_Donnas_and_Thursday_Club.mp3" type="audio/mp3" />
+                                    <source src="https://www.xcsb.org/programmers/PETA_PSA_The_Donnas_and_Thursday_Club.mp3" type="audio/mp3" />
                                 </audio>
                             </div>
                             <div className="audio-row">
-                                &#9654; <a href="programmers/PETA_PSA_William_Shatner_and_Thursday_Club.mp3" download>PETA PSA William Shatner and Thursday Club</a> (64 sec.)&nbsp;
+                                &#9654; <a href="https://www.xcsb.org/programmers/PETA_PSA_William_Shatner_and_Thursday_Club.mp3" download>PETA PSA William Shatner and Thursday Club</a> (64 sec.)&nbsp;
                                 <audio className="compact-player" controls preload="none">
-                                    <source src="programmers/PETA_PSA_William_Shatner_and_Thursday_Club.mp3" type="audio/mp3" />
+                                    <source src="https://www.xcsb.org/programmers/PETA_PSA_William_Shatner_and_Thursday_Club.mp3" type="audio/mp3" />
                                 </audio>
                             </div>
                             <div className="audio-row">
-                                &#9654; <a href="programmers/Pest_Health_PSA.mp3" download>Pest Health PSA</a> (48 sec.)&nbsp;
+                                &#9654; <a href="https://www.xcsb.org/programmers/Pest_Health_PSA.mp3" download>Pest Health PSA</a> (48 sec.)&nbsp;
                                 <audio className="compact-player" controls preload="none">
-                                    <source src="programmers/Pest_Health_PSA.mp3" type="audio/mp3" />
+                                    <source src="https://www.xcsb.org/programmers/Pest_Health_PSA.mp3" type="audio/mp3" />
                                 </audio>
                             </div>
 
                             <div className="audio-row">
-                                &#9654; <a href="programmers/Cleveland_Zoological_Society_PSA.wav" download> Cleveland Zoological Society</a> (TommyFox) (50 sec.)&nbsp;
+                                &#9654; <a href="https://www.xcsb.org/programmers/Cleveland_Zoological_Society_PSA.wav" download> Cleveland Zoological Society</a> (TommyFox) (50 sec.)&nbsp;
                                 <audio className="compact-player" controls preload="none">
-                                    <source src="programmers/Cleveland_Zoological_Society_PSA.wav" type="audio/wav" />
+                                    <source src="https://www.xcsb.org/programmers/Cleveland_Zoological_Society_PSA.wav" type="audio/wav" />
                                 </audio>
                             </div>
                             <div className="audio-row">
-                                &#9654; <a href="programmers/Free_Clinic_Of_Cleveland.wav" download>Free Clinic Of Cleveland</a> (TommyFox) (56 sec.)&nbsp;
+                                &#9654; <a href="https://www.xcsb.org/programmers/Free_Clinic_Of_Cleveland.wav" download>Free Clinic Of Cleveland</a> (TommyFox) (56 sec.)&nbsp;
                                 <audio className="compact-player" controls preload="none">
-                                    <source src="programmers/Free_Clinic_Of_Cleveland.wav" type="audio/wav" />
+                                    <source src="https://www.xcsb.org/programmers/Free_Clinic_Of_Cleveland.wav" type="audio/wav" />
                                 </audio>
                             </div>
                         </div>
@@ -483,24 +483,24 @@ function ProgrammersPage(props) {
                             <h2 id="fundraising">Fundraising</h2>
                             <p>We could use more of these, y'all...</p>
                             <div className="audio-row">
-                                &#9654; <a href="programmers/FILENAME" download>DISPLAYNAME</a> (LENGHT sec.)&nbsp;
+                                &#9654; <a href="https://www.xcsb.org/programmers/FILENAME" download>DISPLAYNAME</a> (LENGHT sec.)&nbsp;
                                 <audio className="compact-player" controls preload="none">
-                                    <source src="programmers/XFILENAME" type="audio/wav" />
+                                    <source src="https://www.xcsb.org/programmers/XFILENAME" type="audio/wav" />
                                 </audio>
                             </div>
 
                             <div className="audio-row">
-                                &#9654; <a href="programmers/Drumplay_Benefit_PSA-NEW.mp3" download>Drumplay Benefit (fundraising) NEW!!</a> thru April 18 (Steve) (68 sec.)&nbsp;
+                                &#9654; <a href="https://www.xcsb.org/programmers/Drumplay_Benefit_PSA-NEW.mp3" download>Drumplay Benefit (fundraising) NEW!!</a> thru April 18 (Steve) (68 sec.)&nbsp;
                                 <audio className="compact-player" controls preload="none">
-                                    <source src="programmers/Drumplay_Benefit_PSA-NEW.mp3" type="audio/wav" />
+                                    <source src="https://www.xcsb.org/programmers/Drumplay_Benefit_PSA-NEW.mp3" type="audio/wav" />
                                 </audio>
                             </div>
 
 
                             <div className="audio-row">
-                                &#9654; <a href="programmers/XCSB-REBORN-ASK_fundraising_johnT.mp3" download>XCSB Reborn (fundraising)</a> (JT) (54 sec.)&nbsp;
+                                &#9654; <a href="https://www.xcsb.org/programmers/XCSB-REBORN-ASK_fundraising_johnT.mp3" download>XCSB Reborn (fundraising)</a> (JT) (54 sec.)&nbsp;
                                 <audio className="compact-player" controls preload="none">
-                                    <source src="programmers/XCSB-REBORN-ASK_fundraising_johnT.mp3" type="audio/mp3" />
+                                    <source src="https://www.xcsb.org/programmers/XCSB-REBORN-ASK_fundraising_johnT.mp3" type="audio/mp3" />
                                 </audio>
                             </div>
 
