@@ -12,9 +12,16 @@ function ProgrammersPage(props) {
                 <div className="row">
                     <div className="grid_6">
                         <h1><em>XCSB - Resources for programmers</em></h1>
-                        <p>This page is for XCSB programmers working off-site and producing pre-recorded shows for automation. Here's where's you can find show guidelines, and instructions for uploading your files. Also, downloadable <a href="#ids">station IDs</a>, <a href="#psas">PSAs</a>, and pre-recorded <a href="#fundraising">fundraising spots</a> to incorporate into you shows. </p>
+                        <p>This page is for XCSB programmers working off-site and producing pre-recorded shows for automation. 
+                            Here's where's you can find show guidelines, and instructions for uploading your files. Also, 
+                            downloadable <a href="#ids">station IDs</a>, <a href="#psas">PSAs</a>, and pre-recorded <a href="#fundraising">fundraising spots</a> 
+                            to incorporate into your shows. </p>
                         <div className="highlightBox">
-                            <p>Note that this information will likely change as we figure out more of the things. We'll post notifications to Discord, but please bookmark and refer to this page for the most CURRENT information about creating &amp; submitting shows. Any questions can be sent to <a href="mailto:programming@xcsb.org" target="_blank">programming@xcsb.org</a>, or posted to Discord. [updated March 8, 2026] </p>
+                            <h3>NOTE: Changes made to how you submit files (4/12/26)</h3>
+                            <p>Note that this information will likely change as we figure out more of the things. We'll post 
+                                notifications to Discord, but please bookmark and refer to this page for the most CURRENT 
+                                information about creating &amp; submitting shows. Any questions can be sent to 
+                                <a href="mailto:programming@xcsb.org" target="_blank">programming@xcsb.org</a>, or posted to Discord. [updated March 8, 2026] </p>
                         </div>
                     </div>
 
