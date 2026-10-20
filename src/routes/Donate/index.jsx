@@ -9,17 +9,9 @@ function Donate(props) {
                 <div className="wrapper">
                     <div className="row">
                         <div className="grid_8">
-                            <h1><em>Donate to support XCSB!</em></h1>
-                            <p>THANK YOU for donating to XCSB!  Your donations will enable us to rent a studio space, rebuild our broadcast studio, pay for the numerous licensing fees required to for music broadcasting, and all the myriad of little things required to restore our programming services to the community.</p>
-
-                            <h2><a href="https://square.link/u/Eu7UreAU" className="buttonlinkwide" target="_blank">DONATE NOW</a></h2>
-
-                            <p>You can also donate by check! Please make checks out to The Reading Room CLE, <i>with “XCSB2b” in the memo line</i> to designate it as a donation to the station.  Mail checks to:</p>
-
-                            <p>The Reading Room CLE<br />
-                                17021 Lorain Avenue<br />
-                                Cleveland Ohio 44111
-                            </p>
+                            <h1><em>HELP BUILD XCSB!</em></h1>
+                            <p><strong>XCSB is building something new—and we need YOU to help make it happen.</strong></p>
+                            <p>Reestablishing an independent, community-driven station means rebuilding from the ground up: our organization, our studio, our equipment, our volunteer base and more. It's a big undertaking, but we've never been afraid of doing things a little differently.</p>
                             {/* <p>OR, via modern electronic payment methods (again, <i>be sure to add "XCSB2B"</i> in the memo/comments area of the transaction, so the money gets credited to our account) </p>
                     <ul>
                         <li><a href="https://id.venmo.com/signin#/lgn" target="_blank">Venmo</a>: payable to: @readingroomcle</li>
@@ -42,18 +34,40 @@ function Donate(props) {
                     <div id="story" className="row">
                         <div className="grid_12">
 
-                            <p>XCSB is an independant non-profit organization, rising from the ashes of WCSB 89.3 - our mission is to launch a brand new alternative streaming station for our community!  With the fiscal sponsorship of Reading Room Cleveland, XCSB seeks donations from community members in Northeast Ohio and abroad in order to promote freeform, alternative radio in our area, and to again provide our community with the programming that was forcibly taken off air October 3rd by Cleveland State University and our local public media conglomerate, Ideastream.</p>
+                            <h3>Here are three ways you can help build the future of XCSB:</h3>
 
-                            <p>By taking a couple minutes to click the donation link above, you will be helping XCSB in the completion of our short and long term goals for a new station to develop. The initial roadmap for our station to develop is as follows:</p>
+                            <h2>&#9654;  MAKE A FINANCIAL DONATION</h2>
+                            <p>Every dollar helps us get closer to a fully equipped, fully operational XCSB. Your support can help fund our studio space, production and streaming equipment, operating expenses and the many startup costs that come with building a station from scratch.</p>
+                            <p><a href="https://square.link/u/Eu7UreAU" target="_blank">Make a tax-deductible donation to XCSB</a> through our fiscal partner, The Reading Room. Online, Venmo and personal check options are available.</p>
 
-                            <ul>
-                                <li>By 3/1/2026 we seek to announce and program 24 hours of content 7 days a week</li>
-                                <li>By 5/10/2026 we seek to have a fully outfitted streaming studio equipped for DJing live on air and post production.</li>
-                            </ul>
+                            <div>
+                                <h2><a href="https://square.link/u/Eu7UreAU" class="buttonlinkwide" target="_blank"> &nbsp;DONATE NOW&nbsp; </a></h2> <br />
+                            </div>
+                            <p><strong>Your support helps keep independent, community-driven media alive. Thank you!</strong></p>
 
-                            <p>Additionally we will begin to introduce new members to the station at this time, and we will celebrate 50 years of the WCSB we knew and loved and continue the celebration on 5/16 with a Birthday Bash to be announced soon!</p>
+                            <hr />
 
-                            <p>Your donation is tax deductible and can be executed using the "DONATE to XCSB" link above (which links to The Reading Room's Clover donation page), Venmo, Cashapp, or Paypal. In addition to donating, you can also sign up for email blasts for all your XCSB updates by clicking "Stay In Touch" and inputting your preferred communication methods. Thank you! - the XCSB Team.</p>
+                            <h2>&#9654;  MAKE AN IN-KIND DONATION</h2>
+                            <p><strong>Money isn't the only way to make a difference.</strong></p>
+
+                            <p>As we build and equip our studio, we're looking for furniture, carpeting, audio and computer equipment, office equipment and supplies, cleaning supplies&mdash;and yes, coffee!</p>
+
+                            <p>Check out our <a href="files/XCSB_DonationsWishlist.pdf" target="_blank">XCSB Donation Wish List</a> to see what we currently need and learn how to coordinate an in-kind donation.</p>
+
+                            <hr />
+
+                            <h2>&#9654;  VOLUNTEER WITH XCSB</h2>
+                            <p><strong>Have some time, talent or expertise to share? We want to hear from you.</strong></p>
+                            <p>Building a community station takes a community. Whether you can lend a hand at an event, help behind the scenes, contribute professional skills, assist with fundraising and outreach, or just roll up your sleeves when we need some extra hands, there are plenty of ways to get involved.</p>
+
+                            <p>You don't have to be on the air to be part of XCSB.</p>
+
+                            <p><a href="javascript:void(0)">Volunteer with XCSB</a> <em>[volunteer form under revision, check back soon]</em></p>
+
+                            <hr />
+                            <h2>&#9654;  MONEY. STUFF. TIME.</h2>
+                            <p>However you choose to contribute, <strong>you're helping build XCSB.</strong></p>
+                            <h3><strong> Thank you for believing in independent programming, local voices and the power of community-supported media!</strong></h3>
 
                             <a href="https://forms.gle/u4St1H9TxNngSe5H7" className="buttonlinkwide" target="_blank">Stay In Touch!</a>
                             <hr />

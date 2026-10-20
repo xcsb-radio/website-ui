@@ -23,12 +23,13 @@ import Footer from './components/Footer'
 import Programs from './routes/Programs'
 import Main from './routes/Main'
 import ProgrammersPage from './routes/ProgrammersPage'
-import Show from './routes/Show';
+import News from './routes/News';
+// import Show from './routes/Show';
 // import Banner from './components/NavBar/Banner'
 
 function App() {
   const [hlsInstance, setHlsInstance] = useState(null);
-  const [isPlayerCollapsed, setIsPlayerCollapsed] = useState(false)
+  const [isPlayerCollapsed, setIsPlayerCollapsed] = useState(true)
   const [parsedData, setParsedData] = useState([]);
   const [currentShowName, setCurrentShowName] = useState('No Show Selected')
 
@@ -126,6 +127,7 @@ function App() {
     // label.innerText = `NOW PLAYING: ${name} (Broadcast: ${day} @ ${time} EST)`;
     // bar.style.display = "block";
     setCurrentShowName(`NOW PLAYING: ${name} (Broadcast: ${day} @ ${time} EST)`)
+    setIsPlayerCollapsed(false)
 
     if (Hls.isSupported()) {
       const currentHls = hlsInstance
@@ -176,14 +178,14 @@ function App() {
                 element={<Events />}
               />
               <Route
-                path={`/xcsb-WCSB50Years`}
+                path={`/xcsb-WCSB49Years`}
                 element={<WCSB50Years />}
               />
               <Route
                 path={`/xcsb-programDetail`}
-                element={<Programs 
-                  playArchive={playArchive} 
-                  calculateRecentTimestamp={calculateRecentTimestamp} 
+                element={<Programs
+                  playArchive={playArchive}
+                  calculateRecentTimestamp={calculateRecentTimestamp}
                   parsedData={parsedData} />}
               />
               <Route
@@ -191,9 +193,13 @@ function App() {
                 element={<ProgrammersPage />}
               />
               <Route
+                path={`/xcsb-news`}
+                element={<News />}
+              />
+              {/* <Route
                 path={`/xcsb-show/*`}
                 element={<Show parsedData={parsedData} />}
-              />
+              /> */}
               <Route path="*" element={<Main parsedData={parsedData} />} />
             </Routes>
           </div>

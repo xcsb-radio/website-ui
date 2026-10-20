@@ -143,19 +143,6 @@ function Home(props) {
 
                     </div>
                 </section>
-
-
-                <section id="printables" style={{ marginBottom: '60px', width: '100%' }} className="clearfix">
-                    <hr />
-                    <h2 style={{ width: '100%', clear: 'both' }}>Join the Street Team!</h2>
-                    <div className="grid_4">
-                        <p>Here's a few downloadable PDF files you can print out, to display, hand out, and/or post... thanks for your support and help in spreading the word! <em>(click image to download)</em></p>
-                    </div>
-                    <div className="grid_2"><a href="images/fliers/XCSB-Pamphlet_10212025.pdf" target="_blank"><img src={XcsbPamphlet} /><br />Pamphlet: College Radio Condition</a></div>
-                    <div className="grid_2"><a href="images/fliers/saveWCSB_300ppi.pdf" target="_blank"><img src={SaveWCSB} /><br />Flier: Save WCSB</a> </div>
-                    <div className="grid_2"><a href="images/fliers/theyStoleIt_300ppi.pdf" target="_blank"><img src={TheyStoleIt} /><br />Flier: Your Created it...</a></div>
-                    <div className="grid_2"><a href="images/fliers/ideaScam_300ppi.pdf" target="_blank"><img src={IdeaScam} /><br />Flier: Don't fall for the Ideascam</a></div>
-                </section>
             </div>
         </div>
     )

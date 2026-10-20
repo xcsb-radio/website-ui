@@ -248,7 +248,7 @@ function MediaCoverage(props) {
                         </div>
                         <div className="grid_8">
                             {/* TODO: This needs to be its own component */}
-                            {/* <iframe src={iframeContents} width="100%" height="600" style={{ border: "1px solid black" }}></iframe> */}
+                            <iframe src='https://xcsb.org/xcsb-WCSB49Years_cityCouncilComments-iframe.html' width="100%" height="600" style={{ border: "1px solid black" }}></iframe>
                         </div>
                     </section>
                 </section>

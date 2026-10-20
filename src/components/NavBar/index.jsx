@@ -44,31 +44,30 @@ function NavBar(props) {
         <nav className="navbar-container" role="navigation">
             <ul className="srt-menu-new">
                 <li className={window.location.pathname.includes('/about') ? "current" : 'nav-item'}
-                    // onClick={() => handleCloseAndNavigate(`/about`)}
-                    ><NavLink to='/about'>
-                    About</NavLink>
-                    </li>
+                // onClick={() => handleCloseAndNavigate(`/about`)}
+                ><NavLink to='/about'>
+                        About</NavLink>
+                </li>
                 <li className={window.location.pathname.includes('/xcsb-programDetail') ? "current" : 'nav-item'}
-                    // onClick={() => handleCloseAndNavigate(`/xcsb-programDetail`)}
-                    ><NavLink to='/xcsb-programDetail'>
-                    Our Programs</NavLink>
-                    </li>
+                // onClick={() => handleCloseAndNavigate(`/xcsb-programDetail`)}
+                ><NavLink to='/xcsb-programDetail'>
+                        Our Programs</NavLink>
+                </li>
                 <li className={window.location.pathname.includes('/xcsb-donate') ? "current" : 'nav-item'}
-                    // onClick={() => handleCloseAndNavigate(`/xcsb-donate`)}
-                    ><NavLink to='/xcsb-donate'>
-                    Donate</NavLink></li>
-                <li className={window.location.pathname.includes('/xcsb-mediaCoverage') ? "current" : 'nav-item'}
-                    // onClick={() => handleCloseAndNavigate(`/xcsb-mediaCoverage`)}
-                    ><NavLink to='/xcsb-mediaCoverage'>
-                    What Happened?</NavLink></li>
-                <li className={window.location.pathname.includes('/xcsb-WCSB50Years') ? "current" : 'nav-item'}
-                    // onClick={() => handleCloseAndNavigate(`/xcsb-WCSB50Years`)}
-                    ><NavLink to='/xcsb-WCSB50Years'>
-                    WCSB - 50 Years!</NavLink></li>
+                // onClick={() => handleCloseAndNavigate(`/xcsb-donate`)}
+                ><NavLink to='/xcsb-donate'>
+                        Donate</NavLink></li>
+                <li className={window.location.pathname.includes('/xcsb-news') ? "current" : 'nav-item'}
+                // onClick={() => handleCloseAndNavigate(`/xcsb-donate`)}
+                ><NavLink to='/xcsb-news'>
+                        Latest News</NavLink></li>
+                <li className={window.location.pathname.includes('/xcsb-WCSB49Years') ? "current" : 'nav-item'}
+                ><NavLink to='/xcsb-WCSB49Years'>
+                        WCSB - 49 Years!</NavLink></li>
                 <li className={window.location.pathname.includes('/xcsb-events') ? "current" : 'nav-item'}
-                    // onClick={() => handleCloseAndNavigate(`/xcsb-events`)}
-                    ><NavLink to='/xcsb-events'>
-                    Events</NavLink></li>
+                // onClick={() => handleCloseAndNavigate(`/xcsb-events`)}
+                ><NavLink to='/xcsb-events'>
+                        Events</NavLink></li>
                 <li className='nav-item'><a href="https://forms.gle/u4St1H9TxNngSe5H7" target="_blank">Stay in Touch!</a></li>
             </ul>
         </nav>
@@ -78,28 +77,28 @@ function NavBar(props) {
             {isOpen ? <ul className="srt-menu-mobile">
                 <li className={window.location.pathname.includes('/about') ? "current" : 'nav-item'}
                     onClick={() => handleCloseAndNavigate(`/about`)}
-                    ><NavLink to='/about'>
-                    About</NavLink></li>
+                ><NavLink to='/about'>
+                        About</NavLink></li>
                 <li className={window.location.pathname.includes('/xcsb-programDetail') ? "current" : 'nav-item'}
                     onClick={() => handleCloseAndNavigate(`/xcsb-programDetail`)}
-                    ><NavLink to='/xcsb-programDetail'>
-                    Our Programs</NavLink></li>
+                ><NavLink to='/xcsb-programDetail'>
+                        Our Programs</NavLink></li>
                 <li className={window.location.pathname.includes('/xcsb-donate') ? "current" : 'nav-item'}
                     onClick={() => handleCloseAndNavigate(`/xcsb-donate`)}
-                    ><NavLink to='/xcsb-donate'>
-                    Donate</NavLink></li>
-                <li className={window.location.pathname.includes('/xcsb-mediaCoverage') ? "current " : 'nav-item'}
-                    onClick={() => handleCloseAndNavigate(`/xcsb-mediaCoverage`)}
-                    ><NavLink to='/xcsb-mediaCoverage'>
-                    What Happened?</NavLink></li>
-                <li className={window.location.pathname.includes('/xcsb-WCSB50Years') ? "current" : 'nav-item'}
-                    onClick={() => handleCloseAndNavigate(`/xcsb-WCSB50Years`)}
-                    ><NavLink to='/xcsb-WCSB50Years'>
-                    WCSB - 50 Years!</NavLink></li>
+                ><NavLink to='/xcsb-donate'>
+                        Donate</NavLink></li>
+                <li className={window.location.pathname.includes('/xcsb-news') ? "current" : 'nav-item'}
+                    onClick={() => handleCloseAndNavigate(`/xcsb-news`)}
+                ><NavLink to='/xcsb-news'>
+                        Latest News</NavLink></li>
+                <li className={window.location.pathname.includes('/xcsb-WCSB49Years') ? "current" : 'nav-item'}
+                    onClick={() => handleCloseAndNavigate(`/xcsb-WCSB49Years`)}
+                ><NavLink to='/xcsb-WCSB49Years'>
+                        WCSB - 49 Years!</NavLink></li>
                 <li className={window.location.pathname.includes('/xcsb-events') ? "current" : 'nav-item'}
                     onClick={() => handleCloseAndNavigate(`/xcsb-events`)}
-                    ><NavLink to='/xcsb-events'>
-                    Events</NavLink></li>
+                ><NavLink to='/xcsb-events'>
+                        Events</NavLink></li>
                 <li>
                     <div className="nav-item">
                         <a href="https://forms.gle/u4St1H9TxNngSe5H7" target="_blank">Stay in Touch!</a>
