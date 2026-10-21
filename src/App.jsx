@@ -24,7 +24,7 @@ import Programs from './routes/Programs'
 import Main from './routes/Main'
 import ProgrammersPage from './routes/ProgrammersPage'
 import News from './routes/News';
-// import Show from './routes/Show';
+import Show from './routes/Show';
 // import Banner from './components/NavBar/Banner'
 
 function App() {
@@ -196,10 +196,12 @@ function App() {
                 path={`/xcsb-news`}
                 element={<News />}
               />
-              {/* <Route
+              <Route
                 path={`/xcsb-show/*`}
-                element={<Show parsedData={parsedData} />}
-              /> */}
+                element={<Show 
+                  playArchive={playArchive}
+                  parsedData={parsedData} />}
+              />
               <Route path="*" element={<Main parsedData={parsedData} />} />
             </Routes>
           </div>

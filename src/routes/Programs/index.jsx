@@ -18,7 +18,7 @@ const ShowRow = (props) => {
     return (
         (props.selectedDay === props.day) || (props.selectedDay === 'Show All') ? <tr>
             <td style={{ whiteSpace: 'nowrap' }}>{formattedTime()}</td>
-            <td><NavLink to={`/xcsb-show/${props.showName.replace(/\s/g, "-")}`}>{props.showName}</NavLink></td>
+            <td><NavLink style={{textDecoration: 'none'}} to={`/xcsb-show/${props.showName.replace(/\s/g, "-")}`}>{props.showName}</NavLink></td>
             <td>{props.djName}</td>
             <td><span className="listenbutton" onClick={() => props.playArchive(props.showName, props.day, props.startTime)}>Listen</span></td>
         </tr> : null
