@@ -6,6 +6,7 @@ import IAJ from './images/IAJ.jpg'
 import KLTE from './images/KLTE.jpg'
 import EE from './images/EE.png'
 import TCV from './images/TCV.png'
+import CA from './images/CA.jpeg'
 
 export const shows = {
     'The-Little-Lighthouse': {
@@ -55,5 +56,11 @@ export const shows = {
         name: 'The Cosmic Vibe',
         description: `Music that takes you some place far, far away into a world of total tranquility.`,
         image: TCV
+    },
+    'Carnage Asada': {
+        djName: 'emosteve',
+        name: 'carange asada',
+        description: 'aggressive music',
+        image: CA
     }
 }
