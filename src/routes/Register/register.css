@@ -1,0 +1,26 @@
+.register-button {
+    background-color: #004E7C;
+    color: white;
+    padding: 0.5em;
+    width: 10em;
+    border-radius: 5px;
+    margin: auto;
+}
+.chosen-show {
+    padding: 0.5em;
+    background-color: white;
+    margin: 0.5em;
+    width: fit-content;
+    white-space: nowrap;
+    border-radius: 5px;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: row;
+}
+.chosen-shows-box {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    width: 70%;
+    height: fit-content;
+    margin: 1em 0;
+}
