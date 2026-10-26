@@ -29,7 +29,7 @@ function Main(props) {
           <h1 className="headline">by the community.</h1>
           <div className='now-playing-container special-elite-regular'>
             <p className="now-playing-text"><span style={{ fontWeight: 'bold', color: '#444444' }}>Now playing:</span> {currentShow2()?.SHOW_TITLE}</p>
-            <p className="now-playing-text">{currentShow2() ? currentShow2()['DJ NAME'] : null}</p>
+            <p className="now-playing-text">{currentShow2() ? currentShow2().DJ_NAME : null}</p>
           </div>
         </div>
         <div className="buttons-container">

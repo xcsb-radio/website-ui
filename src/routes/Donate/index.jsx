@@ -41,7 +41,7 @@ function Donate(props) {
                             <p><a href="https://square.link/u/Eu7UreAU" target="_blank">Make a tax-deductible donation to XCSB</a> through our fiscal partner, The Reading Room. Online, Venmo and personal check options are available.</p>
 
                             <div>
-                                <h2><a href="https://square.link/u/Eu7UreAU" class="buttonlinkwide" target="_blank"> &nbsp;DONATE NOW&nbsp; </a></h2> <br />
+                                <h2><a href="https://square.link/u/Eu7UreAU" className="buttonlinkwide" target="_blank"> &nbsp;DONATE NOW&nbsp; </a></h2> <br />
                             </div>
                             <p><strong>Your support helps keep independent, community-driven media alive. Thank you!</strong></p>
 

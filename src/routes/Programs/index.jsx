@@ -87,7 +87,7 @@ function Programs(props) {
                                                     selectedDay={day}
                                                     day={i.DAY}
                                                     startTime={i.START_TIME}
-                                                    djName={i['DJ NAME']}
+                                                    djName={i.DJ_NAME}
                                                     showName={i.SHOW_TITLE}
                                                     playArchive={props.playArchive} /> : null)}
                                                 <tr colspan="4" className="spacer">
@@ -113,7 +113,7 @@ function Programs(props) {
                                                     selectedDay={day}
                                                     day={i.DAY}
                                                     startTime={i.START_TIME}
-                                                    djName={i['DJ NAME']}
+                                                    djName={i.DJ_NAME}
                                                     showName={i.SHOW_TITLE}
                                                     playArchive={props.playArchive} /> : null)}
                                                 <tr colspan="4" className="spacer">
@@ -139,7 +139,7 @@ function Programs(props) {
                                                     selectedDay={day}
                                                     day={i.DAY}
                                                     startTime={i.START_TIME}
-                                                    djName={i['DJ NAME']}
+                                                    djName={i.DJ_NAME}
                                                     showName={i.SHOW_TITLE}
                                                     playArchive={props.playArchive} /> : null)}
                                                 <tr colspan="4" className="spacer">
@@ -165,7 +165,7 @@ function Programs(props) {
                                                     selectedDay={day}
                                                     day={i.DAY}
                                                     startTime={i.START_TIME}
-                                                    djName={i['DJ NAME']}
+                                                    djName={i.DJ_NAME}
                                                     showName={i.SHOW_TITLE}
                                                     playArchive={props.playArchive} /> : null)}
 
@@ -192,7 +192,7 @@ function Programs(props) {
                                                     selectedDay={day}
                                                     day={i.DAY}
                                                     startTime={i.START_TIME}
-                                                    djName={i['DJ NAME']}
+                                                    djName={i.DJ_NAME}
                                                     showName={i.SHOW_TITLE}
                                                     playArchive={props.playArchive} /> : null)}
 
@@ -219,7 +219,7 @@ function Programs(props) {
                                                     selectedDay={day}
                                                     day={i.DAY}
                                                     startTime={i.START_TIME}
-                                                    djName={i['DJ NAME']}
+                                                    djName={i.DJ_NAME}
                                                     showName={i.SHOW_TITLE}
                                                     playArchive={props.playArchive} /> : null)}
 
@@ -246,7 +246,7 @@ function Programs(props) {
                                                     selectedDay={day}
                                                     day={i.DAY}
                                                     startTime={i.START_TIME}
-                                                    djName={i['DJ NAME']}
+                                                    djName={i.DJ_NAME}
                                                     showName={i.SHOW_TITLE}
                                                     playArchive={props.playArchive} /> : null)}
                                             </table> : null}
