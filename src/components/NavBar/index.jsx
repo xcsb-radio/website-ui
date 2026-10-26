@@ -40,6 +40,10 @@ function NavBar(props) {
         setIsOpen(false);
         navigate(link);
     }
+        const handleCloseAndLogout = () => {
+        setIsOpen(false);
+        props.logOut();
+    }
     return width && width > 990 ? (
         <nav className="navbar-container" role="navigation">
             <ul className="srt-menu-new">
@@ -69,6 +73,8 @@ function NavBar(props) {
                 ><NavLink to='/xcsb-events'>
                         Events</NavLink></li>
                 <li className='nav-item'><a href="https://forms.gle/u4St1H9TxNngSe5H7" target="_blank">Stay in Touch!</a></li>
+                {props.authenticated ? <li onClick={props.logOut} className='nav-item'>Log Out</li> :
+                    <li className='nav-item'><NavLink to='/login'>Log In</NavLink></li>}
             </ul>
         </nav>
     ) : (
@@ -104,6 +110,13 @@ function NavBar(props) {
                         <a href="https://forms.gle/u4St1H9TxNngSe5H7" target="_blank">Stay in Touch!</a>
                     </div>
                 </li>
+                {props.authenticated ? <li className={window.location.pathname.includes('/xcsb-events') ? "current" : 'nav-item'}
+                    onClick={() => handleCloseAndLogout()}
+                >Log Out</li> :
+                    <li className={window.location.pathname.includes('/xcsb-events') ? "current" : 'nav-item'}
+                        onClick={() => handleCloseAndNavigate(`/login`)}
+                    ><NavLink to='/login'>
+                            Log In</NavLink></li>}
             </ul> : null}
         </nav>
     )
