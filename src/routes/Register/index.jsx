@@ -28,9 +28,9 @@ function Register(props) {
             email: email,
             username: username,
             password: password,
-            associatedShows: associatedShows
+            associatedShows: associatedShows,
+            roles: ['member']
         }
-        console.log('payload is...', payload)
         const config = {
             headers: {
                 'accept': 'application/json',
