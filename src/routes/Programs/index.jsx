@@ -9,7 +9,7 @@ const ShowRow = (props) => {
             return '12:00 AM'
         } else if (props.startTime === '12:00') {
             return '12:00 PM'
-        }else if (props.startTime.split(':')[0] > 12) {
+        } else if (props.startTime.split(':')[0] > 12) {
             return `${props.startTime.split(':')[0] - 12}:00 PM`
         } else {
             return props.startTime + ' AM'
@@ -18,7 +18,7 @@ const ShowRow = (props) => {
     return (
         (props.selectedDay === props.day) || (props.selectedDay === 'Show All') ? <tr>
             <td style={{ whiteSpace: 'nowrap' }}>{formattedTime()}</td>
-            <td><NavLink style={{textDecoration: 'none'}} to={`/xcsb-show/${props.showName.replace(/\s/g, "-")}`}>{props.showName}</NavLink></td>
+            <td><NavLink style={{ textDecoration: 'none' }} to={`/xcsb-show/${props.showName.replace(/\s/g, "-")}`}>{props.showName}</NavLink></td>
             <td>{props.djName}</td>
             <td><span className="listenbutton" onClick={() => props.playArchive(props.showName, props.day, props.startTime)}>Listen</span></td>
         </tr> : null
@@ -28,7 +28,7 @@ const ShowRow = (props) => {
 function Programs(props) {
     const days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
     const [day, setDay] = useState(days[new Date().getDay()])
-    const { parsedData } = props;
+    const parsedData = props.parsedData.sort((a, b) => a.START_TIME?.split(':')[0] - b.START_TIME?.split(':')[0]);
 
     const handleSetDayShown = (e) => {
         const dayOption = e.target.value
@@ -87,7 +87,7 @@ function Programs(props) {
                                                     selectedDay={day}
                                                     day={i.DAY}
                                                     startTime={i.START_TIME}
-                                                    djName={i['DJ NAME']}
+                                                    djName={i.DJ_NAME}
                                                     showName={i.SHOW_TITLE}
                                                     playArchive={props.playArchive} /> : null)}
                                                 <tr colspan="4" className="spacer">
@@ -113,7 +113,7 @@ function Programs(props) {
                                                     selectedDay={day}
                                                     day={i.DAY}
                                                     startTime={i.START_TIME}
-                                                    djName={i['DJ NAME']}
+                                                    djName={i.DJ_NAME}
                                                     showName={i.SHOW_TITLE}
                                                     playArchive={props.playArchive} /> : null)}
                                                 <tr colspan="4" className="spacer">
@@ -139,7 +139,7 @@ function Programs(props) {
                                                     selectedDay={day}
                                                     day={i.DAY}
                                                     startTime={i.START_TIME}
-                                                    djName={i['DJ NAME']}
+                                                    djName={i.DJ_NAME}
                                                     showName={i.SHOW_TITLE}
                                                     playArchive={props.playArchive} /> : null)}
                                                 <tr colspan="4" className="spacer">
@@ -165,7 +165,7 @@ function Programs(props) {
                                                     selectedDay={day}
                                                     day={i.DAY}
                                                     startTime={i.START_TIME}
-                                                    djName={i['DJ NAME']}
+                                                    djName={i.DJ_NAME}
                                                     showName={i.SHOW_TITLE}
                                                     playArchive={props.playArchive} /> : null)}
 
@@ -192,7 +192,7 @@ function Programs(props) {
                                                     selectedDay={day}
                                                     day={i.DAY}
                                                     startTime={i.START_TIME}
-                                                    djName={i['DJ NAME']}
+                                                    djName={i.DJ_NAME}
                                                     showName={i.SHOW_TITLE}
                                                     playArchive={props.playArchive} /> : null)}
 
@@ -219,7 +219,7 @@ function Programs(props) {
                                                     selectedDay={day}
                                                     day={i.DAY}
                                                     startTime={i.START_TIME}
-                                                    djName={i['DJ NAME']}
+                                                    djName={i.DJ_NAME}
                                                     showName={i.SHOW_TITLE}
                                                     playArchive={props.playArchive} /> : null)}
 
@@ -246,7 +246,7 @@ function Programs(props) {
                                                     selectedDay={day}
                                                     day={i.DAY}
                                                     startTime={i.START_TIME}
-                                                    djName={i['DJ NAME']}
+                                                    djName={i.DJ_NAME}
                                                     showName={i.SHOW_TITLE}
                                                     playArchive={props.playArchive} /> : null)}
                                             </table> : null}

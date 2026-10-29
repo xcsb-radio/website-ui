@@ -1,10 +1,35 @@
 import { useState, useEffect, useEffectEvent } from 'react'
 import './events.css'
-import { eventsList } from '../../assets/files/events'
+import Loader from '../../components/Loading';
+import axios from 'axios';
+import { API } from '../../constants';
+// import { eventsList } from '../../assets/files/events'
 
 function Events(props) {
   const [isExpanded, setIsExpanded] = useState({});
   const [isEventExpanded, setIsEventExpanded] = useState({});
+  const [eventsList, setEventsList] = useState({});
+  const [loading, setLoading] = useState(false)
+
+  useEffect(() => {
+    const fetchEvents = async () => {
+      try {
+        setLoading(true);
+        const response = await axios.get(API + `/events`);
+        const eventsByMonth = {}
+        response.data.forEach(m => eventsByMonth[m.month] = [])
+        response.data.forEach(m => eventsByMonth[m.month].push(m))
+        setEventsList(eventsByMonth)
+      } catch (err) {
+        console.log('error::', err)
+        setError(err.message || 'Something went wrong');
+      } finally {
+        setLoading(false);
+      }
+    };
+
+    fetchEvents();
+  }, []);
 
   const handleSetMonthExpanded = (month, expanded) => {
     setIsExpanded(prev => ({
@@ -42,6 +67,7 @@ function Events(props) {
 
   return (
     <div className="events-container">
+      {loading ? <Loader /> : null}
       {Object.keys(eventsList).map(month => <div className="inner-container">
         <h2 className="month-header" id={`${month}-toggle`}
           onClick={() => handleSetMonthExpanded(month, !isExpanded[month])}>{month}
@@ -56,8 +82,8 @@ function Events(props) {
               <p>{event.time}</p>
               <button className="more-btn" id={`${event.eventId}more`} onClick={() => handleSetEventExpanded(event.eventId, !isEventExpanded[event.eventId])}>More
                 {!isEventExpanded[event.eventId] ? <i className="arrow-more right" id={`${event.eventId}-arrow-right`}></i> :
-                <i className="arrow-more down" id={`${event.eventId}-arrow-down`}></i>}
-                </button>
+                  <i className="arrow-more down" id={`${event.eventId}-arrow-down`}></i>}
+              </button>
               {isEventExpanded[event.eventId] ? <div className="event-description-box" id={`${event.eventId}-description-box`}>{event.description}</div>
                 : null}
             </div>

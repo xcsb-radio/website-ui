@@ -1,0 +1,21 @@
+.login-container {
+    background-color: #DCE1E3;
+    padding: 1em;
+    border-radius: 5px;
+    border: 1px solid black;
+}
+.input-field {
+    margin: 2em;
+    font-size: 1.2em;
+}
+.login-button {
+    background-color: #004E7C;
+    color: white;
+    padding: 0.5em;
+    width: 10em;
+    border-radius: 5px;
+    margin: auto;
+}
+.error-container {
+    color: red;
+}

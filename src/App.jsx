@@ -1,10 +1,12 @@
 import { useState, useEffect } from 'react'
 import Hls from 'hls.js';
 import Papa from 'papaparse'
-import showCsvData from './assets/files/programs/xcsb-programDetail.csv'
+import axios from 'axios';
+import showCsvData from './assets/files/programs/1016.csv'
 import reactLogo from './assets/react.svg'
 import viteLogo from './assets/vite.svg'
 import heroImg from './assets/hero.png'
+import { API } from './constants';
 
 import './App.css'
 import './assets/shared-css/basic-style.css'
@@ -25,6 +27,10 @@ import Main from './routes/Main'
 import ProgrammersPage from './routes/ProgrammersPage'
 import News from './routes/News';
 import Show from './routes/Show';
+import Login from './routes/Login';
+import MembersOnlyWarning from './routes/MembersOnlyWarning';
+import Register from './routes/Register';
+import RegisterSuccess from './routes/RegisterSuccess';
 // import Banner from './components/NavBar/Banner'
 
 function App() {
@@ -32,23 +38,76 @@ function App() {
   const [isPlayerCollapsed, setIsPlayerCollapsed] = useState(true)
   const [parsedData, setParsedData] = useState([]);
   const [currentShowName, setCurrentShowName] = useState('No Show Selected')
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState(null);
+  const [authenticated, setAuthenticated] = useState(false)
 
   const STATION_ID = "XCSB";
   const STATION_TZ = "America/New_York";
 
+  // useEffect(() => {
+  //   if (!parsedData.length) {
+  //     Papa.parse(showCsvData, {
+  //       download: true,
+  //       header: true,
+  //       complete: (results) => {
+  //         // remove entries that are missing show titles from being displayed
+  //         const parsedWithShowsPresent = results.data.filter(i => i.SHOW_TITLE)
+  //         setParsedData(parsedWithShowsPresent)
+  //       }
+  //     });
+  //   }
+  // }, []);
+
   useEffect(() => {
-    if (!parsedData.length) {
-      Papa.parse(showCsvData, {
-        download: true,
-        header: true,
-        complete: (results) => {
-          // remove entries that are missing show titles from being displayed
-          const parsedWithShowsPresent = results.data.filter(i => i.SHOW_TITLE)
-          setParsedData(parsedWithShowsPresent)
-        }
-      });
-    }
+    const fetchShows = async () => {
+      try {
+        setLoading(true);
+        const response = await axios.get(API + '/shows');
+        const parsedWithShowsPresent = response.data.filter(i => i.SHOW_TITLE)
+        setParsedData(parsedWithShowsPresent);
+      } catch (err) {
+        console.log('error::', err)
+        setError(err.message || 'Something went wrong');
+      } finally {
+        setLoading(false);
+      }
+    };
+
+    fetchShows();
   }, []);
+
+  useEffect(() => {
+    const fetchAccount = async () => {
+      try {
+        setLoading(true);
+        const token = sessionStorage.getItem('access_token')
+        const config = {
+          headers: {
+            'accept': 'application/json',
+            // 'Content-Type': 'application/x-www-form-urlencoded',
+            'Authorization': 'Bearer' + ' ' + token
+          }
+        };
+        const response = await axios.get(API + '/user/me', config);
+        if (response && response.status === 200) {
+          setAuthenticated(true)
+        }
+      } catch (err) {
+        console.log('error::', err)
+        setError(err.message || 'Something went wrong');
+      } finally {
+        setLoading(false);
+      }
+    };
+
+    fetchAccount();
+  }, [authenticated]);
+
+  const logOut = () => {
+    sessionStorage.removeItem('access_token');
+    setAuthenticated(false);
+  }
 
   function calculateRecentTimestamp(dayName, timeStr) {
     const days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
@@ -154,7 +213,7 @@ function App() {
           <NavLink to='/'>
             <img className="header-banner" src={FlyingV} alt="banner image XCSB" />
           </NavLink>
-          <NavBar />
+          <NavBar authenticated={authenticated} logOut={logOut} />
           <div className="routes-container">
             <Routes>
               <Route
@@ -189,20 +248,38 @@ function App() {
                   parsedData={parsedData} />}
               />
               <Route
-                path={`/xcsb-programmers`}
-                element={<ProgrammersPage />}
-              />
-              <Route
                 path={`/xcsb-news`}
                 element={<News />}
               />
               <Route
                 path={`/xcsb-show/*`}
-                element={<Show 
+                element={<Show
                   playArchive={playArchive}
                   parsedData={parsedData} />}
               />
+              <Route
+                path={`/login`}
+                element={<Login setAuthenticated={setAuthenticated} authenticated={authenticated} />}
+              />
+              <Route
+                path={`/register`}
+                element={<Register parsedData={parsedData} authenticated={authenticated} />}
+              />
+              <Route
+                path={`/success`}
+                element={<RegisterSuccess />}
+              />
               <Route path="*" element={<Main parsedData={parsedData} />} />
+
+              {authenticated ?
+                <Route
+                  path={`/xcsb-programmers`}
+                  element={<ProgrammersPage />}
+                />
+                : <Route
+                  path={`/xcsb-programmers`}
+                  element={<MembersOnlyWarning />}
+                />}
             </Routes>
           </div>
           <div className='player-bar' id="player-bar" style={isPlayerCollapsed ? { width: '1em' } : null}>
